@@ -1,0 +1,1007 @@
+vertical,area,initiative,service,date,proyected_spend,max_spend,min_spend
+Retail,Platform,Pocket Growth,Kubernetes (GKE),01/01/2025,1989.52,2201.8,1582.26
+Retail,Promotion,Ad Targeting,AWS Redshift,01/01/2025,1601.65,1771.78,1337.9
+Fintech,Lending,Logistics Optimization,AWS S3,01/01/2025,291.24,322.26,237.76
+Fintech,Deposits,Search Relevance,Kubernetes (GKE),01/01/2025,1501.95,1623.29,1128.32
+Fintech,Deposits,Logistics Optimization,GCP Cloud Storage,01/01/2025,1871.27,2045.41,1587.54
+Fintech,Pocket,Fraud Shield,GCP BigQuery,02/01/2025,2289.9,2491.21,1842.79
+Retail,Delivery,Checkout Revamp,AWS Redshift,02/01/2025,1504.45,1671.64,1152.01
+Fintech,Pocket,Fraud Shield,GCP Cloud Run,02/01/2025,885.78,987.14,724.22
+Retail,Advertisement,Lending Scoring,GCP BigQuery,02/01/2025,632.48,689.32,507.26
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,02/01/2025,951.5,1053.04,715.71
+Retail,Services,Fraud Shield,AWS S3,03/01/2025,435.79,472.91,349.73
+Retail,Advertisement,Shipping Automation,GCP BigQuery,03/01/2025,1851.23,2019.7,1549.31
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,03/01/2025,1929.1,2094.13,1629.76
+Fintech,Transfers,Search Relevance,GCP Cloud Run,03/01/2025,774.16,844.87,584.85
+Fintech,Deposits,Logistics Optimization,Databricks,03/01/2025,199.17,220.48,164.0
+Fintech,Lending,Shipping Automation,AWS S3,04/01/2025,1169.06,1305.16,934.78
+Retail,Advertisement,Seller Onboarding 2.0,Databricks,04/01/2025,964.84,1049.84,811.36
+Fintech,Bank account,Pocket Growth,GCP Cloud Run,04/01/2025,1162.44,1280.64,938.83
+Retail,Advertisement,Shipping Automation,AWS EC2,04/01/2025,357.81,396.48,270.86
+Retail,Delivery,Pocket Growth,AWS Redshift,05/01/2025,216.93,242.56,173.5
+Retail,Services,Lending Scoring,AWS S3,05/01/2025,449.26,496.17,338.24
+Fintech,Pocket,Fraud Shield,Azure Data Lake,05/01/2025,238.82,260.37,196.82
+Fintech,Lending,Shipping Automation,AWS Redshift,05/01/2025,1553.85,1717.03,1242.37
+Fintech,Lending,Pocket Growth,AWS S3,05/01/2025,1590.13,1737.73,1214.94
+Retail,Delivery,Seller Onboarding 2.0,AWS EC2,05/01/2025,146.38,163.8,117.86
+Retail,Delivery,Checkout Revamp,Kubernetes (GKE),05/01/2025,1264.61,1385.99,1039.57
+Retail,Platform,Pocket Growth,Kubernetes (GKE),06/01/2025,2144.07,2374.38,1639.04
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,06/01/2025,1902.04,2055.97,1542.57
+Retail,Services,Lending Scoring,GCP Cloud Storage,06/01/2025,1340.89,1469.62,1068.59
+Fintech,Deposits,Fraud Shield,Databricks,06/01/2025,646.12,720.42,486.11
+Retail,Platform,Pocket Growth,AWS S3,07/01/2025,1533.65,1693.78,1275.01
+Fintech,Bank account,Lending Scoring,AWS EC2,07/01/2025,972.51,1067.58,797.32
+Retail,Services,Ad Targeting,GCP Cloud Storage,07/01/2025,1452.89,1623.52,1230.45
+Retail,Delivery,CrossBorder Expansion,AWS EC2,07/01/2025,2648.26,2950.59,2147.25
+Fintech,Transfers,Search Relevance,GCP Cloud Run,08/01/2025,862.01,942.08,715.45
+Retail,Delivery,Search Relevance,AWS EC2,08/01/2025,489.46,539.27,382.75
+Retail,Platform,Fraud Shield,Kubernetes (GKE),08/01/2025,2932.72,3224.79,2439.63
+Retail,Promotion,Shipping Automation,AWS Redshift,08/01/2025,1477.42,1632.98,1156.11
+Fintech,Transfers,Search Relevance,GCP BigQuery,08/01/2025,717.37,784.35,590.86
+Fintech,Pocket,Lending Scoring,GCP Cloud Run,08/01/2025,355.58,387.5,289.61
+Fintech,Bank account,Pocket Growth,AWS EC2,08/01/2025,2250.51,2512.71,1834.42
+Retail,Promotion,CrossBorder Expansion,AWS Redshift,09/01/2025,1767.73,1974.48,1375.87
+Fintech,Pocket,Lending Scoring,Azure Data Lake,09/01/2025,1663.57,1852.77,1336.43
+Fintech,Bank account,Lending Scoring,GCP Cloud Storage,09/01/2025,717.81,803.33,584.21
+Retail,Delivery,Checkout Revamp,AWS Redshift,09/01/2025,2128.5,2362.21,1627.75
+Fintech,Transfers,Search Relevance,GCP BigQuery,10/01/2025,599.16,665.42,475.02
+Retail,Delivery,CrossBorder Expansion,Kubernetes (GKE),10/01/2025,210.99,234.3,174.83
+Retail,Services,Seller Onboarding 2.0,GCP Cloud Storage,10/01/2025,475.82,523.03,361.62
+Fintech,Lending,Logistics Optimization,AWS S3,10/01/2025,440.72,484.02,359.51
+Fintech,Lending,Shipping Automation,AWS S3,11/01/2025,1310.35,1427.77,1108.69
+Fintech,Transfers,Fraud Shield,AWS Redshift,11/01/2025,2156.65,2384.81,1726.48
+Retail,Platform,Fraud Shield,AWS Lambda,11/01/2025,199.18,217.42,166.83
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,11/01/2025,719.57,784.56,594.48
+Retail,Advertisement,Lending Scoring,Databricks,11/01/2025,1718.54,1896.3,1332.36
+Fintech,Lending,CrossBorder Expansion,Databricks,12/01/2025,863.91,947.19,723.03
+Fintech,Deposits,Fraud Shield,GCP Cloud Storage,12/01/2025,1979.46,2155.15,1522.81
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,12/01/2025,119.39,132.84,90.29
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),12/01/2025,1498.78,1670.28,1183.06
+Retail,Promotion,Lending Scoring,GCP Cloud Storage,13/01/2025,1549.45,1683.8,1206.97
+Fintech,Transfers,Fraud Shield,GCP BigQuery,13/01/2025,1462.42,1579.85,1138.7
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,13/01/2025,2419.39,2645.47,1816.28
+Retail,Promotion,Lending Scoring,AWS S3,13/01/2025,744.11,827.38,607.08
+Fintech,Pocket,Ad Targeting,GCP BigQuery,13/01/2025,1821.35,2028.19,1518.48
+Retail,Platform,Search Relevance,AWS S3,13/01/2025,1032.52,1120.84,824.04
+Retail,Services,Seller Onboarding 2.0,AWS Lambda,14/01/2025,569.89,633.14,454.02
+Retail,Promotion,Search Relevance,GCP Cloud Storage,14/01/2025,1356.83,1471.66,1129.17
+Fintech,Pocket,Ad Targeting,AWS Lambda,14/01/2025,92.91,101.8,73.28
+Fintech,Deposits,Checkout Revamp,AWS EC2,14/01/2025,698.68,782.49,592.89
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,14/01/2025,826.75,899.26,626.04
+Fintech,Pocket,Lending Scoring,AWS S3,14/01/2025,682.25,741.03,561.86
+Retail,Delivery,Seller Onboarding 2.0,AWS Redshift,15/01/2025,779.58,855.13,659.56
+Retail,Delivery,Pocket Growth,Kubernetes (GKE),15/01/2025,1505.13,1662.85,1263.07
+Fintech,Lending,Pocket Growth,Databricks,15/01/2025,1180.15,1318.6,974.77
+Retail,Platform,Search Relevance,AWS S3,15/01/2025,1254.65,1404.24,1032.08
+Fintech,Pocket,CrossBorder Expansion,Azure Data Lake,15/01/2025,452.38,489.83,383.04
+Retail,Services,Ad Targeting,GCP Cloud Storage,15/01/2025,1539.77,1671.45,1265.79
+Fintech,Deposits,Pocket Growth,Databricks,16/01/2025,1336.07,1485.21,1109.88
+Fintech,Pocket,CrossBorder Expansion,GCP Cloud Run,16/01/2025,276.24,301.33,224.34
+Fintech,Bank account,CrossBorder Expansion,GCP Cloud Run,16/01/2025,202.32,225.66,164.18
+Fintech,Deposits,CrossBorder Expansion,GCP Cloud Storage,16/01/2025,2359.63,2611.02,1925.69
+Fintech,Lending,CrossBorder Expansion,AWS Lambda,17/01/2025,2426.66,2631.65,1983.09
+Retail,Delivery,Seller Onboarding 2.0,AWS EC2,17/01/2025,110.4,122.91,92.85
+Retail,Promotion,Seller Onboarding 2.0,AWS Redshift,17/01/2025,429.59,466.99,364.07
+Retail,Advertisement,Seller Onboarding 2.0,GCP BigQuery,17/01/2025,585.9,642.7,486.17
+Fintech,Bank account,Shipping Automation,AWS EC2,17/01/2025,359.38,396.07,278.28
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,17/01/2025,2102.8,2313.15,1579.03
+Retail,Platform,Fraud Shield,AWS S3,18/01/2025,443.72,491.4,335.96
+Retail,Promotion,Shipping Automation,AWS Redshift,18/01/2025,1090.7,1206.44,872.1
+Fintech,Lending,Logistics Optimization,AWS S3,18/01/2025,466.5,522.34,371.72
+Retail,Services,Lending Scoring,GCP BigQuery,18/01/2025,739.12,827.8,605.0
+Fintech,Deposits,Pocket Growth,AWS Redshift,18/01/2025,201.35,221.62,155.56
+Fintech,Bank account,Lending Scoring,GCP Cloud Run,18/01/2025,372.99,404.25,288.52
+Retail,Services,Search Relevance,GCP BigQuery,19/01/2025,710.67,788.21,544.07
+Retail,Advertisement,Logistics Optimization,AWS EC2,19/01/2025,1336.42,1495.54,1016.28
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,19/01/2025,615.58,672.66,496.5
+Retail,Platform,Fraud Shield,AWS Lambda,19/01/2025,239.89,263.5,185.51
+Fintech,Lending,Fraud Shield,AWS S3,19/01/2025,513.85,563.69,395.34
+Retail,Platform,Search Relevance,AWS Lambda,19/01/2025,161.45,174.7,132.26
+Fintech,Bank account,Pocket Growth,GCP Cloud Storage,19/01/2025,624.81,691.59,473.03
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,20/01/2025,138.58,151.63,116.49
+Fintech,Lending,Pocket Growth,AWS Lambda,20/01/2025,1103.72,1226.79,828.43
+Fintech,Lending,Fraud Shield,AWS S3,20/01/2025,399.32,444.56,308.67
+Retail,Promotion,Lending Scoring,AWS S3,20/01/2025,974.92,1084.94,819.59
+Fintech,Bank account,Shipping Automation,AWS EC2,20/01/2025,298.05,326.86,233.78
+Fintech,Bank account,CrossBorder Expansion,AWS S3,21/01/2025,1400.41,1530.46,1185.56
+Retail,Services,Lending Scoring,GCP BigQuery,21/01/2025,575.76,639.07,445.05
+Fintech,Bank account,Seller Onboarding 2.0,AWS S3,21/01/2025,2066.32,2297.86,1591.23
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),21/01/2025,1385.05,1523.07,1093.86
+Fintech,Deposits,Search Relevance,Databricks,21/01/2025,511.48,570.67,390.93
+Fintech,Deposits,Checkout Revamp,AWS EC2,21/01/2025,748.69,812.9,629.06
+Retail,Promotion,CrossBorder Expansion,AWS S3,21/01/2025,1813.31,2022.13,1491.28
+Fintech,Deposits,CrossBorder Expansion,AWS Redshift,22/01/2025,1966.13,2130.97,1589.77
+Retail,Advertisement,Shipping Automation,AWS EC2,22/01/2025,307.88,334.4,260.39
+Fintech,Transfers,Fraud Shield,AWS Redshift,22/01/2025,1620.94,1785.22,1305.14
+Fintech,Pocket,Lending Scoring,AWS S3,22/01/2025,949.85,1028.4,782.18
+Fintech,Bank account,CrossBorder Expansion,AWS EC2,22/01/2025,299.05,323.61,242.45
+Fintech,Lending,Pocket Growth,AWS Lambda,22/01/2025,1188.49,1283.59,959.69
+Retail,Advertisement,Shipping Automation,Databricks,23/01/2025,446.07,489.54,339.93
+Retail,Services,Search Relevance,GCP BigQuery,23/01/2025,640.93,712.06,527.46
+Retail,Advertisement,Shipping Automation,Databricks,23/01/2025,453.4,490.3,344.87
+Fintech,Bank account,Pocket Growth,AWS EC2,23/01/2025,1817.34,2010.15,1467.33
+Fintech,Deposits,Search Relevance,AWS Lambda,24/01/2025,180.16,200.5,147.23
+Retail,Platform,Fraud Shield,AWS S3,24/01/2025,492.37,535.06,393.77
+Retail,Promotion,Shipping Automation,AWS Redshift,24/01/2025,1045.08,1134.82,844.66
+Retail,Services,Fraud Shield,AWS S3,24/01/2025,411.64,458.75,339.3
+Retail,Promotion,Lending Scoring,GCP Cloud Storage,24/01/2025,1644.74,1830.47,1315.35
+Fintech,Bank account,CrossBorder Expansion,Kubernetes (GKE),25/01/2025,199.13,219.35,166.24
+Fintech,Lending,Logistics Optimization,AWS Lambda,25/01/2025,722.2,803.64,588.45
+Fintech,Bank account,Shipping Automation,AWS EC2,25/01/2025,400.09,433.58,317.44
+Fintech,Deposits,Fraud Shield,AWS Lambda,25/01/2025,217.72,238.58,176.06
+Retail,Advertisement,Lending Scoring,GCP BigQuery,25/01/2025,701.97,778.84,538.84
+Fintech,Deposits,Search Relevance,Kubernetes (GKE),26/01/2025,1146.82,1250.38,945.36
+Fintech,Pocket,Fraud Shield,AWS Lambda,26/01/2025,909.57,1009.71,684.93
+Retail,Services,Checkout Revamp,GCP BigQuery,26/01/2025,762.05,838.38,587.94
+Retail,Promotion,Lending Scoring,GCP Cloud Storage,26/01/2025,645.97,717.04,486.57
+Fintech,Bank account,Lending Scoring,GCP Cloud Run,26/01/2025,392.88,431.62,301.02
+Fintech,Bank account,Pocket Growth,AWS S3,27/01/2025,1383.52,1514.56,1156.33
+Fintech,Transfers,Fraud Shield,GCP BigQuery,27/01/2025,3910.37,4257.48,3117.95
+Retail,Promotion,Ad Targeting,AWS Redshift,27/01/2025,2065.24,2247.68,1720.35
+Retail,Promotion,CrossBorder Expansion,GCP Cloud Storage,27/01/2025,1826.57,2027.61,1403.13
+Fintech,Bank account,Pocket Growth,Kubernetes (GKE),27/01/2025,2660.57,2886.07,2106.06
+Fintech,Deposits,CrossBorder Expansion,AWS Redshift,27/01/2025,1567.09,1697.85,1290.74
+Fintech,Pocket,Lending Scoring,GCP Cloud Run,28/01/2025,325.04,353.34,246.07
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),28/01/2025,883.81,960.71,741.06
+Fintech,Lending,Logistics Optimization,AWS S3,28/01/2025,481.77,536.17,382.34
+Retail,Promotion,Seller Onboarding 2.0,AWS S3,28/01/2025,1914.11,2097.75,1488.98
+Retail,Platform,Pocket Growth,Kubernetes (GKE),28/01/2025,2046.42,2291.2,1727.41
+Fintech,Transfers,Search Relevance,AWS Redshift,28/01/2025,2049.15,2224.33,1619.27
+Retail,Delivery,Pocket Growth,Kubernetes (GKE),28/01/2025,2717.3,3005.72,2088.0
+Retail,Advertisement,Shipping Automation,AWS EC2,29/01/2025,348.39,382.51,293.78
+Retail,Delivery,Seller Onboarding 2.0,AWS EC2,29/01/2025,98.36,107.78,78.57
+Retail,Advertisement,Lending Scoring,GCP BigQuery,29/01/2025,732.66,816.91,603.81
+Fintech,Deposits,Search Relevance,AWS Redshift,29/01/2025,1970.48,2205.01,1544.28
+Retail,Advertisement,Pocket Growth,AWS EC2,30/01/2025,2077.89,2316.67,1741.55
+Fintech,Deposits,Checkout Revamp,GCP Cloud Storage,30/01/2025,509.59,554.28,385.4
+Fintech,Deposits,CrossBorder Expansion,AWS EC2,30/01/2025,3591.02,3910.02,2731.07
+Retail,Promotion,Lending Scoring,AWS Redshift,30/01/2025,1220.86,1350.57,1015.03
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),30/01/2025,2338.45,2552.57,1912.09
+Retail,Services,Lending Scoring,AWS S3,31/01/2025,788.15,874.37,623.62
+Fintech,Pocket,CrossBorder Expansion,Azure Data Lake,31/01/2025,795.5,877.16,619.05
+Fintech,Pocket,Lending Scoring,Azure Data Lake,31/01/2025,2029.32,2236.38,1635.09
+Fintech,Lending,Pocket Growth,AWS Lambda,31/01/2025,703.31,782.89,586.83
+Fintech,Pocket,CrossBorder Expansion,AWS S3,31/01/2025,2120.31,2350.19,1780.18
+Retail,Platform,Fraud Shield,Kubernetes (GKE),31/01/2025,1167.4,1262.03,875.58
+Retail,Advertisement,Pocket Growth,GCP BigQuery,31/01/2025,879.13,951.2,707.23
+Retail,Delivery,Seller Onboarding 2.0,AWS Redshift,01/02/2025,293.9,324.48,224.17
+Retail,Delivery,Pocket Growth,Kubernetes (GKE),01/02/2025,1625.58,1787.24,1303.33
+Retail,Advertisement,Seller Onboarding 2.0,GCP BigQuery,01/02/2025,451.41,492.22,342.06
+Fintech,Transfers,Fraud Shield,AWS Redshift,01/02/2025,2269.16,2488.69,1908.87
+Retail,Delivery,Fraud Shield,AWS Redshift,01/02/2025,1663.52,1847.04,1395.03
+Retail,Advertisement,Pocket Growth,GCP BigQuery,02/02/2025,767.13,853.87,580.75
+Retail,Services,Search Relevance,GCP Cloud Storage,02/02/2025,1587.96,1750.65,1199.31
+Fintech,Transfers,Search Relevance,GCP BigQuery,02/02/2025,557.53,610.73,456.35
+Fintech,Deposits,Pocket Growth,Kubernetes (GKE),02/02/2025,2026.52,2210.58,1650.57
+Fintech,Deposits,Logistics Optimization,AWS EC2,03/02/2025,1010.03,1111.92,812.83
+Fintech,Pocket,Ad Targeting,Azure Data Lake,03/02/2025,176.16,192.48,142.41
+Fintech,Deposits,Fraud Shield,AWS EC2,03/02/2025,1421.59,1567.4,1181.34
+Fintech,Bank account,CrossBorder Expansion,GCP Cloud Storage,03/02/2025,1939.25,2146.88,1474.15
+Fintech,Deposits,Fraud Shield,Kubernetes (GKE),03/02/2025,88.2,95.49,72.74
+Retail,Platform,Pocket Growth,Kubernetes (GKE),04/02/2025,1553.0,1677.31,1210.52
+Retail,Promotion,Seller Onboarding 2.0,AWS S3,04/02/2025,2018.62,2197.25,1702.27
+Retail,Advertisement,Logistics Optimization,AWS EC2,04/02/2025,1351.77,1508.28,1143.77
+Retail,Promotion,Lending Scoring,AWS S3,04/02/2025,796.63,880.96,625.06
+Retail,Services,Fraud Shield,GCP Cloud Storage,05/02/2025,1787.89,1943.22,1459.09
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,05/02/2025,789.45,880.72,619.29
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),05/02/2025,1960.61,2154.32,1648.09
+Fintech,Bank account,CrossBorder Expansion,GCP Cloud Storage,05/02/2025,1853.87,2037.49,1399.7
+Retail,Services,Seller Onboarding 2.0,AWS Lambda,05/02/2025,1305.97,1459.32,1012.32
+Retail,Promotion,CrossBorder Expansion,AWS Redshift,06/02/2025,1571.12,1700.55,1197.78
+Retail,Promotion,Shipping Automation,AWS Redshift,06/02/2025,1054.29,1147.7,881.76
+Fintech,Lending,Logistics Optimization,AWS Redshift,06/02/2025,851.26,939.31,696.32
+Retail,Delivery,Pocket Growth,AWS EC2,06/02/2025,2002.36,2178.2,1628.25
+Retail,Promotion,CrossBorder Expansion,GCP Cloud Storage,06/02/2025,1763.49,1952.5,1404.23
+Retail,Platform,Search Relevance,AWS S3,07/02/2025,1088.7,1185.12,893.07
+Retail,Advertisement,Logistics Optimization,Databricks,07/02/2025,149.42,161.97,126.1
+Fintech,Deposits,Checkout Revamp,GCP Cloud Storage,07/02/2025,486.95,529.94,395.95
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,07/02/2025,806.68,884.86,665.14
+Fintech,Lending,CrossBorder Expansion,Databricks,08/02/2025,1140.68,1239.97,925.56
+Fintech,Pocket,CrossBorder Expansion,GCP Cloud Run,08/02/2025,232.18,252.0,192.78
+Fintech,Pocket,Ad Targeting,AWS S3,08/02/2025,528.53,589.0,435.41
+Retail,Promotion,Lending Scoring,AWS S3,08/02/2025,943.48,1031.05,742.81
+Retail,Advertisement,Shipping Automation,Databricks,08/02/2025,218.1,238.7,176.92
+Retail,Platform,Search Relevance,AWS S3,10/02/2025,966.47,1045.92,788.12
+Fintech,Deposits,Search Relevance,Kubernetes (GKE),10/02/2025,1135.46,1242.53,904.52
+Fintech,Bank account,Shipping Automation,AWS S3,10/02/2025,1098.16,1197.65,848.67
+Retail,Platform,Fraud Shield,AWS S3,10/02/2025,407.51,450.06,330.94
+Fintech,Bank account,Lending Scoring,Azure Data Lake,10/02/2025,1696.13,1845.76,1342.06
+Fintech,Bank account,Lending Scoring,Kubernetes (GKE),10/02/2025,204.38,227.99,153.97
+Retail,Services,Ad Targeting,AWS Lambda,11/02/2025,91.38,102.08,72.9
+Fintech,Pocket,Lending Scoring,AWS Lambda,11/02/2025,1061.08,1150.2,805.38
+Fintech,Transfers,Search Relevance,GCP Cloud Run,11/02/2025,849.74,921.37,654.84
+Fintech,Lending,Logistics Optimization,AWS S3,11/02/2025,355.45,385.53,300.05
+Fintech,Transfers,Fraud Shield,AWS S3,11/02/2025,410.09,453.06,330.98
+Fintech,Pocket,Lending Scoring,AWS S3,12/02/2025,615.92,668.2,480.52
+Fintech,Deposits,Search Relevance,AWS Redshift,12/02/2025,2688.02,2994.71,2019.58
+Retail,Services,Checkout Revamp,AWS Lambda,12/02/2025,1578.87,1752.81,1269.66
+Fintech,Deposits,CrossBorder Expansion,Databricks,12/02/2025,1313.53,1461.68,1104.31
+Retail,Delivery,CrossBorder Expansion,AWS Redshift,13/02/2025,1938.78,2134.68,1539.0
+Fintech,Transfers,Fraud Shield,GCP BigQuery,13/02/2025,2312.93,2590.18,1936.72
+Fintech,Deposits,CrossBorder Expansion,Databricks,13/02/2025,568.31,614.78,440.36
+Fintech,Deposits,Search Relevance,AWS Redshift,13/02/2025,1939.67,2125.98,1550.25
+Retail,Advertisement,Logistics Optimization,GCP BigQuery,13/02/2025,1028.88,1124.52,800.11
+Fintech,Deposits,Logistics Optimization,AWS Lambda,13/02/2025,631.23,705.68,481.67
+Fintech,Transfers,Search Relevance,AWS S3,14/02/2025,1033.05,1139.53,813.12
+Fintech,Lending,CrossBorder Expansion,AWS Redshift,14/02/2025,2445.25,2719.72,1928.71
+Fintech,Bank account,Pocket Growth,Azure Data Lake,14/02/2025,1249.78,1358.28,968.01
+Fintech,Transfers,Fraud Shield,AWS S3,14/02/2025,461.42,516.39,353.33
+Fintech,Transfers,Fraud Shield,GCP BigQuery,15/02/2025,4747.25,5221.71,3622.6
+Retail,Advertisement,Logistics Optimization,AWS EC2,15/02/2025,1374.06,1511.11,1162.94
+Fintech,Bank account,Pocket Growth,Kubernetes (GKE),15/02/2025,1928.38,2157.55,1531.87
+Retail,Promotion,Lending Scoring,GCP Cloud Storage,15/02/2025,1447.62,1585.48,1199.17
+Fintech,Bank account,Pocket Growth,Kubernetes (GKE),16/02/2025,2423.39,2655.79,1851.38
+Fintech,Transfers,Search Relevance,GCP Cloud Run,16/02/2025,1046.19,1154.35,821.43
+Fintech,Transfers,Search Relevance,GCP BigQuery,16/02/2025,723.32,784.89,584.43
+Fintech,Bank account,Shipping Automation,GCP Cloud Storage,16/02/2025,1150.79,1257.64,956.53
+Fintech,Lending,CrossBorder Expansion,AWS Lambda,16/02/2025,1936.26,2106.12,1580.18
+Retail,Delivery,CrossBorder Expansion,AWS Redshift,16/02/2025,2093.46,2269.58,1632.11
+Fintech,Deposits,Logistics Optimization,Databricks,17/02/2025,204.83,228.31,169.92
+Fintech,Bank account,Seller Onboarding 2.0,AWS EC2,17/02/2025,91.55,101.03,76.96
+Fintech,Pocket,Fraud Shield,GCP BigQuery,17/02/2025,1511.51,1654.11,1150.56
+Fintech,Lending,Shipping Automation,AWS Lambda,17/02/2025,1541.81,1690.36,1192.71
+Fintech,Lending,Logistics Optimization,AWS S3,17/02/2025,1056.92,1159.71,877.26
+Retail,Services,Checkout Revamp,AWS Lambda,17/02/2025,1550.44,1713.75,1272.56
+Fintech,Pocket,Lending Scoring,Azure Data Lake,17/02/2025,2003.97,2238.58,1508.57
+Fintech,Deposits,Checkout Revamp,GCP Cloud Storage,18/02/2025,588.12,657.11,458.25
+Retail,Platform,Fraud Shield,AWS Lambda,18/02/2025,169.4,185.61,133.65
+Retail,Promotion,Ad Targeting,AWS Redshift,18/02/2025,1644.73,1797.97,1347.42
+Retail,Delivery,Search Relevance,AWS Redshift,18/02/2025,2161.82,2373.76,1772.88
+Retail,Advertisement,Logistics Optimization,AWS EC2,18/02/2025,1142.73,1260.11,966.81
+Fintech,Bank account,Seller Onboarding 2.0,GCP Cloud Storage,18/02/2025,646.83,710.53,502.69
+Fintech,Lending,CrossBorder Expansion,AWS Redshift,18/02/2025,2321.14,2568.0,1962.95
+Fintech,Deposits,CrossBorder Expansion,Kubernetes (GKE),19/02/2025,208.28,229.57,176.94
+Fintech,Bank account,Seller Onboarding 2.0,GCP Cloud Storage,19/02/2025,465.68,508.91,361.86
+Fintech,Bank account,CrossBorder Expansion,GCP Cloud Storage,19/02/2025,1764.16,1929.69,1332.14
+Retail,Delivery,Seller Onboarding 2.0,AWS Redshift,19/02/2025,480.52,526.24,372.09
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,19/02/2025,722.13,782.63,579.75
+Retail,Advertisement,Lending Scoring,AWS EC2,19/02/2025,1061.3,1153.26,850.52
+Retail,Delivery,Search Relevance,AWS Redshift,20/02/2025,2644.19,2932.21,2132.24
+Fintech,Pocket,Fraud Shield,AWS S3,20/02/2025,372.33,407.91,304.39
+Fintech,Transfers,Fraud Shield,AWS S3,20/02/2025,410.31,446.66,327.36
+Retail,Platform,Fraud Shield,AWS S3,20/02/2025,466.4,514.21,376.33
+Fintech,Transfers,Fraud Shield,AWS Redshift,21/02/2025,2866.24,3182.16,2264.85
+Fintech,Lending,Fraud Shield,AWS S3,21/02/2025,531.7,579.71,404.19
+Fintech,Pocket,Ad Targeting,GCP BigQuery,21/02/2025,1679.68,1869.6,1260.6
+Retail,Services,Ad Targeting,GCP BigQuery,21/02/2025,1261.15,1408.83,1062.04
+Fintech,Deposits,Search Relevance,GCP Cloud Storage,21/02/2025,1619.45,1787.71,1314.24
+Fintech,Transfers,Search Relevance,AWS Redshift,22/02/2025,1898.45,2101.12,1579.37
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,22/02/2025,898.7,972.49,732.25
+Fintech,Bank account,Lending Scoring,AWS S3,22/02/2025,760.85,850.5,624.85
+Retail,Delivery,Fraud Shield,AWS Redshift,22/02/2025,2125.64,2329.07,1769.7
+Retail,Platform,Pocket Growth,AWS S3,23/02/2025,1485.57,1659.31,1149.22
+Retail,Advertisement,Lending Scoring,Databricks,23/02/2025,2299.24,2536.43,1840.25
+Retail,Promotion,Seller Onboarding 2.0,GCP Cloud Storage,23/02/2025,472.38,510.26,358.1
+Retail,Delivery,Search Relevance,AWS Redshift,23/02/2025,2508.24,2712.76,2123.83
+Fintech,Pocket,Fraud Shield,AWS S3,23/02/2025,450.9,499.24,380.24
+Fintech,Lending,Shipping Automation,AWS Lambda,24/02/2025,933.31,1028.98,755.67
+Retail,Advertisement,Logistics Optimization,AWS EC2,24/02/2025,869.65,940.15,732.22
+Fintech,Deposits,CrossBorder Expansion,GCP Cloud Storage,24/02/2025,1743.01,1934.29,1435.77
+Retail,Services,Search Relevance,GCP BigQuery,24/02/2025,531.65,592.3,399.48
+Fintech,Deposits,Pocket Growth,AWS Lambda,24/02/2025,512.04,563.18,424.54
+Fintech,Deposits,Pocket Growth,GCP Cloud Storage,24/02/2025,536.21,589.09,445.15
+Retail,Services,Fraud Shield,AWS S3,24/02/2025,373.85,403.84,296.33
+Retail,Platform,Fraud Shield,AWS Lambda,25/02/2025,194.5,216.18,155.64
+Fintech,Lending,CrossBorder Expansion,AWS Lambda,25/02/2025,2358.53,2578.41,1867.85
+Retail,Services,Checkout Revamp,AWS S3,25/02/2025,2735.2,3050.16,2221.87
+Fintech,Lending,CrossBorder Expansion,AWS Redshift,25/02/2025,1686.92,1847.04,1294.41
+Retail,Delivery,CrossBorder Expansion,AWS Redshift,25/02/2025,1847.62,2037.2,1544.88
+Retail,Platform,Pocket Growth,AWS S3,25/02/2025,1195.43,1303.99,964.9
+Fintech,Bank account,Shipping Automation,Kubernetes (GKE),26/02/2025,136.82,148.64,106.86
+Fintech,Deposits,Checkout Revamp,AWS EC2,26/02/2025,950.35,1055.84,725.29
+Retail,Services,Seller Onboarding 2.0,AWS S3,26/02/2025,2110.89,2321.69,1716.24
+Fintech,Transfers,Search Relevance,GCP Cloud Run,26/02/2025,1301.48,1433.53,1032.37
+Fintech,Pocket,Fraud Shield,GCP Cloud Run,27/02/2025,734.81,821.98,619.51
+Fintech,Lending,Shipping Automation,AWS S3,27/02/2025,2137.48,2390.87,1780.46
+Retail,Delivery,Checkout Revamp,AWS EC2,27/02/2025,921.28,1026.52,776.72
+Fintech,Pocket,Fraud Shield,AWS S3,27/02/2025,349.75,380.36,271.83
+Fintech,Deposits,Search Relevance,AWS Redshift,27/02/2025,1845.86,2037.41,1515.81
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,27/02/2025,1457.52,1625.32,1133.41
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,28/02/2025,1918.94,2101.19,1618.35
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,28/02/2025,115.59,125.3,88.28
+Retail,Delivery,CrossBorder Expansion,Kubernetes (GKE),28/02/2025,195.07,217.01,149.51
+Retail,Platform,Fraud Shield,Kubernetes (GKE),28/02/2025,1683.04,1850.11,1415.61
+Fintech,Pocket,CrossBorder Expansion,GCP BigQuery,28/02/2025,1167.98,1287.79,990.01
+Fintech,Deposits,Checkout Revamp,Databricks,28/02/2025,1748.22,1956.76,1476.15
+Retail,Advertisement,Seller Onboarding 2.0,GCP BigQuery,28/02/2025,346.45,382.58,264.91
+Retail,Services,Seller Onboarding 2.0,AWS Lambda,01/03/2025,2525.0,2769.93,2086.99
+Retail,Promotion,Search Relevance,AWS Redshift,01/03/2025,2122.14,2323.32,1687.47
+Fintech,Transfers,Search Relevance,GCP BigQuery,01/03/2025,696.07,763.39,561.99
+Fintech,Lending,Pocket Growth,Databricks,01/03/2025,1143.75,1240.67,881.2
+Retail,Services,Lending Scoring,AWS S3,01/03/2025,665.54,739.94,533.17
+Retail,Promotion,Lending Scoring,AWS S3,01/03/2025,645.38,718.63,516.26
+Retail,Services,Ad Targeting,GCP BigQuery,02/03/2025,1395.77,1523.31,1048.35
+Fintech,Bank account,Seller Onboarding 2.0,AWS S3,02/03/2025,2373.07,2591.75,1981.48
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,02/03/2025,2078.88,2317.9,1594.35
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,02/03/2025,355.04,383.78,299.95
+Retail,Services,Fraud Shield,AWS S3,02/03/2025,487.88,537.06,391.39
+Fintech,Deposits,Search Relevance,AWS EC2,02/03/2025,471.63,518.11,359.08
+Retail,Platform,Search Relevance,Kubernetes (GKE),02/03/2025,1245.1,1379.08,975.51
+Fintech,Deposits,Pocket Growth,AWS Lambda,03/03/2025,847.71,921.07,662.47
+Fintech,Bank account,Lending Scoring,AWS EC2,03/03/2025,591.28,654.39,487.02
+Retail,Promotion,Seller Onboarding 2.0,GCP Cloud Storage,03/03/2025,823.66,901.97,665.64
+Fintech,Pocket,CrossBorder Expansion,GCP Cloud Run,03/03/2025,240.47,265.66,195.59
+Fintech,Deposits,Search Relevance,Kubernetes (GKE),04/03/2025,1135.94,1228.63,906.31
+Retail,Services,Search Relevance,AWS S3,04/03/2025,1104.88,1213.68,888.08
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,04/03/2025,549.3,604.72,448.95
+Retail,Services,Checkout Revamp,GCP BigQuery,04/03/2025,455.85,496.23,373.55
+Fintech,Transfers,Fraud Shield,AWS S3,04/03/2025,447.3,485.58,368.99
+Retail,Advertisement,Seller Onboarding 2.0,Databricks,04/03/2025,678.84,738.26,552.23
+Retail,Promotion,Seller Onboarding 2.0,AWS S3,04/03/2025,1646.43,1800.8,1374.78
+Fintech,Pocket,Lending Scoring,AWS Lambda,05/03/2025,1491.41,1616.5,1137.64
+Fintech,Bank account,Lending Scoring,Azure Data Lake,05/03/2025,2067.48,2311.22,1632.87
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,05/03/2025,811.47,889.53,678.89
+Retail,Platform,Search Relevance,Kubernetes (GKE),05/03/2025,1244.92,1384.79,971.8
+Fintech,Lending,Pocket Growth,Databricks,05/03/2025,1063.38,1189.89,813.73
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),05/03/2025,1034.99,1121.13,855.15
+Fintech,Bank account,CrossBorder Expansion,AWS EC2,06/03/2025,2333.98,2581.53,1948.73
+Retail,Services,Fraud Shield,AWS Lambda,06/03/2025,193.71,215.96,164.49
+Retail,Delivery,Fraud Shield,AWS EC2,06/03/2025,1735.53,1918.4,1467.0
+Retail,Advertisement,Pocket Growth,GCP BigQuery,06/03/2025,713.73,783.08,552.27
+Retail,Services,Seller Onboarding 2.0,GCP BigQuery,06/03/2025,336.83,369.59,253.06
+Retail,Delivery,Checkout Revamp,AWS Redshift,06/03/2025,1167.78,1262.88,987.37
+Retail,Advertisement,Logistics Optimization,Databricks,07/03/2025,165.57,182.36,128.35
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,07/03/2025,1022.99,1145.48,862.19
+Fintech,Transfers,Fraud Shield,GCP BigQuery,07/03/2025,2598.98,2906.56,2055.24
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,07/03/2025,960.5,1038.89,743.8
+Fintech,Lending,Shipping Automation,AWS Redshift,07/03/2025,1259.51,1395.83,1025.34
+Fintech,Lending,Pocket Growth,Databricks,07/03/2025,1270.71,1387.71,1078.72
+Retail,Delivery,Pocket Growth,AWS Redshift,08/03/2025,222.12,247.91,175.58
+Fintech,Pocket,CrossBorder Expansion,AWS S3,08/03/2025,1520.54,1644.93,1141.74
+Retail,Services,Checkout Revamp,AWS Lambda,08/03/2025,1968.88,2200.1,1622.83
+Retail,Platform,Fraud Shield,AWS S3,08/03/2025,479.61,534.04,398.58
+Retail,Platform,Search Relevance,AWS S3,09/03/2025,1491.88,1618.24,1249.61
+Fintech,Lending,Logistics Optimization,Databricks,09/03/2025,242.49,262.47,192.65
+Fintech,Deposits,Fraud Shield,AWS Lambda,09/03/2025,1487.85,1656.56,1175.93
+Fintech,Lending,CrossBorder Expansion,AWS Lambda,09/03/2025,1791.48,1945.96,1380.82
+Fintech,Bank account,Pocket Growth,Kubernetes (GKE),09/03/2025,1561.07,1719.36,1209.35
+Retail,Promotion,Ad Targeting,AWS Redshift,09/03/2025,1734.45,1936.73,1319.47
+Fintech,Transfers,Fraud Shield,GCP BigQuery,10/03/2025,2013.76,2220.56,1549.43
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,10/03/2025,615.09,674.07,507.62
+Retail,Promotion,CrossBorder Expansion,AWS Redshift,10/03/2025,2039.46,2238.92,1620.17
+Fintech,Deposits,Checkout Revamp,AWS Lambda,10/03/2025,1617.22,1750.68,1326.54
+Retail,Services,Checkout Revamp,AWS Lambda,10/03/2025,1506.51,1685.41,1230.85
+Fintech,Pocket,CrossBorder Expansion,GCP Cloud Run,10/03/2025,331.62,362.28,250.98
+Fintech,Bank account,Pocket Growth,Azure Data Lake,11/03/2025,1417.22,1541.33,1108.0
+Fintech,Transfers,Fraud Shield,AWS S3,11/03/2025,458.37,500.28,344.94
+Retail,Platform,Pocket Growth,Kubernetes (GKE),11/03/2025,1851.95,2071.55,1496.95
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,11/03/2025,418.61,453.68,333.32
+Retail,Platform,Pocket Growth,AWS S3,11/03/2025,1552.46,1730.51,1243.97
+Retail,Services,Seller Onboarding 2.0,AWS S3,11/03/2025,2533.3,2807.7,2126.13
+Fintech,Pocket,Lending Scoring,GCP Cloud Run,12/03/2025,458.8,510.74,379.12
+Fintech,Deposits,Logistics Optimization,Databricks,12/03/2025,154.48,172.86,123.15
+Fintech,Deposits,Fraud Shield,AWS Lambda,12/03/2025,233.47,260.01,196.88
+Retail,Platform,Pocket Growth,AWS Lambda,12/03/2025,887.51,992.0,671.71
+Retail,Promotion,Ad Targeting,GCP Cloud Storage,12/03/2025,1930.01,2094.21,1616.61
+Fintech,Pocket,Lending Scoring,AWS Lambda,12/03/2025,1182.68,1314.95,981.87
+Retail,Promotion,CrossBorder Expansion,AWS Redshift,12/03/2025,2415.8,2661.8,1868.55
+Fintech,Lending,Fraud Shield,AWS Lambda,13/03/2025,244.55,269.43,205.5
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,13/03/2025,134.43,150.02,102.16
+Retail,Promotion,Seller Onboarding 2.0,GCP Cloud Storage,13/03/2025,687.31,769.01,534.34
+Retail,Promotion,Lending Scoring,AWS S3,13/03/2025,821.66,910.56,692.77
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),13/03/2025,1921.86,2112.74,1500.62
+Retail,Advertisement,Lending Scoring,AWS EC2,13/03/2025,867.64,952.89,682.69
+Retail,Platform,Search Relevance,AWS S3,14/03/2025,959.71,1051.31,743.07
+Retail,Services,Ad Targeting,GCP BigQuery,14/03/2025,1003.73,1098.54,770.04
+Fintech,Bank account,Lending Scoring,AWS EC2,14/03/2025,688.03,753.84,535.4
+Fintech,Deposits,CrossBorder Expansion,Kubernetes (GKE),14/03/2025,170.74,185.02,135.12
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,14/03/2025,2044.46,2214.35,1671.87
+Fintech,Lending,Pocket Growth,AWS Lambda,15/03/2025,790.88,878.83,617.11
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,15/03/2025,1005.86,1104.27,758.72
+Retail,Promotion,Lending Scoring,GCP Cloud Storage,15/03/2025,1006.01,1123.94,796.0
+Retail,Services,Lending Scoring,GCP BigQuery,15/03/2025,597.95,660.43,468.53
+Retail,Advertisement,Lending Scoring,AWS EC2,16/03/2025,837.13,905.28,674.97
+Retail,Platform,Pocket Growth,AWS S3,16/03/2025,1621.84,1761.81,1255.93
+Retail,Services,Search Relevance,AWS S3,16/03/2025,1194.67,1300.08,896.28
+Fintech,Lending,Logistics Optimization,AWS Redshift,16/03/2025,904.45,1012.1,754.27
+Fintech,Transfers,Search Relevance,AWS Redshift,16/03/2025,2491.21,2712.3,2067.11
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,16/03/2025,1225.06,1348.34,975.22
+Retail,Services,Seller Onboarding 2.0,AWS S3,16/03/2025,2254.32,2519.09,1807.66
+Retail,Promotion,CrossBorder Expansion,AWS S3,17/03/2025,1728.64,1934.5,1370.54
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,17/03/2025,570.37,621.39,482.02
+Retail,Services,Lending Scoring,AWS Lambda,17/03/2025,2015.51,2180.71,1631.7
+Retail,Promotion,Seller Onboarding 2.0,AWS Redshift,17/03/2025,526.93,572.32,417.17
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,17/03/2025,1178.06,1275.28,932.41
+Retail,Promotion,Ad Targeting,GCP Cloud Storage,17/03/2025,1442.97,1569.67,1131.67
+Retail,Delivery,Search Relevance,Kubernetes (GKE),18/03/2025,1393.8,1537.0,1084.34
+Fintech,Pocket,CrossBorder Expansion,Azure Data Lake,18/03/2025,277.47,309.79,218.05
+Fintech,Pocket,Ad Targeting,AWS Lambda,18/03/2025,76.27,84.01,58.8
+Fintech,Deposits,Search Relevance,AWS Lambda,18/03/2025,123.65,136.63,97.37
+Retail,Advertisement,Pocket Growth,AWS EC2,18/03/2025,1936.01,2106.53,1541.55
+Retail,Services,Seller Onboarding 2.0,AWS S3,18/03/2025,1781.32,1980.87,1406.14
+Fintech,Bank account,Shipping Automation,Kubernetes (GKE),18/03/2025,146.98,162.37,123.45
+Retail,Promotion,Ad Targeting,GCP Cloud Storage,19/03/2025,1672.48,1864.09,1375.92
+Retail,Advertisement,Pocket Growth,Databricks,19/03/2025,742.87,830.5,592.26
+Fintech,Pocket,Ad Targeting,GCP BigQuery,19/03/2025,1857.02,2031.43,1416.35
+Fintech,Lending,Pocket Growth,AWS S3,19/03/2025,1533.58,1661.82,1199.4
+Fintech,Deposits,Search Relevance,GCP Cloud Storage,19/03/2025,1725.45,1879.08,1451.04
+Fintech,Lending,Fraud Shield,Databricks,19/03/2025,692.34,759.85,547.48
+Retail,Delivery,Search Relevance,AWS EC2,19/03/2025,273.19,305.37,226.15
+Fintech,Lending,Shipping Automation,AWS Lambda,20/03/2025,2417.12,2647.07,1877.14
+Fintech,Deposits,Logistics Optimization,Kubernetes (GKE),20/03/2025,1331.92,1479.54,1021.92
+Retail,Platform,Fraud Shield,AWS S3,20/03/2025,489.96,539.75,387.39
+Retail,Platform,Search Relevance,AWS Lambda,20/03/2025,149.99,163.09,118.63
+Retail,Advertisement,Seller Onboarding 2.0,Databricks,20/03/2025,943.0,1030.54,769.62
+Retail,Promotion,Shipping Automation,AWS S3,20/03/2025,2000.92,2213.27,1611.49
+Fintech,Pocket,Ad Targeting,AWS Lambda,20/03/2025,106.04,117.37,80.97
+Fintech,Pocket,Ad Targeting,AWS S3,21/03/2025,552.65,606.48,429.78
+Retail,Services,Seller Onboarding 2.0,AWS Lambda,21/03/2025,2013.22,2192.69,1606.6
+Fintech,Bank account,CrossBorder Expansion,AWS EC2,21/03/2025,3064.44,3398.08,2491.93
+Fintech,Transfers,Search Relevance,GCP BigQuery,21/03/2025,534.9,581.3,451.97
+Fintech,Lending,Logistics Optimization,Databricks,22/03/2025,147.78,165.14,123.5
+Retail,Advertisement,Shipping Automation,AWS EC2,22/03/2025,400.9,435.99,333.03
+Retail,Platform,Pocket Growth,AWS S3,22/03/2025,1258.97,1365.09,1023.11
+Fintech,Lending,Logistics Optimization,AWS Redshift,22/03/2025,929.33,1022.17,702.19
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,22/03/2025,1134.53,1248.87,907.04
+Retail,Platform,Fraud Shield,AWS S3,23/03/2025,459.68,505.79,379.93
+Fintech,Lending,Shipping Automation,AWS Redshift,23/03/2025,1276.05,1400.43,1071.15
+Retail,Delivery,Seller Onboarding 2.0,AWS Redshift,23/03/2025,551.09,617.11,449.78
+Fintech,Deposits,Pocket Growth,GCP Cloud Storage,23/03/2025,723.21,795.14,555.74
+Fintech,Deposits,Fraud Shield,AWS Redshift,23/03/2025,2246.75,2469.45,1823.61
+Retail,Advertisement,Pocket Growth,AWS EC2,24/03/2025,1801.66,1976.19,1392.23
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,24/03/2025,459.49,497.48,353.68
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,24/03/2025,137.22,151.45,115.12
+Fintech,Deposits,Search Relevance,Kubernetes (GKE),24/03/2025,1126.07,1226.43,888.62
+Fintech,Pocket,Lending Scoring,GCP BigQuery,24/03/2025,593.9,656.56,447.85
+Retail,Services,Ad Targeting,AWS Lambda,25/03/2025,80.53,87.14,65.21
+Fintech,Bank account,Lending Scoring,GCP Cloud Run,25/03/2025,366.97,410.73,310.05
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,25/03/2025,678.96,746.01,514.43
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,25/03/2025,341.25,380.79,259.91
+Fintech,Lending,Fraud Shield,AWS Lambda,25/03/2025,211.03,231.92,168.36
+Retail,Delivery,CrossBorder Expansion,AWS EC2,26/03/2025,18077.59,19567.42,14367.61
+Retail,Platform,Pocket Growth,AWS Lambda,26/03/2025,540.6,601.62,448.06
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,26/03/2025,2286.09,2528.25,1755.84
+Fintech,Deposits,Pocket Growth,Kubernetes (GKE),26/03/2025,2940.69,3267.91,2352.97
+Retail,Platform,Search Relevance,AWS S3,26/03/2025,1033.99,1134.42,875.39
+Fintech,Pocket,CrossBorder Expansion,Azure Data Lake,26/03/2025,525.94,581.44,411.13
+Fintech,Bank account,Pocket Growth,GCP Cloud Run,26/03/2025,1495.11,1665.93,1128.73
+Retail,Platform,Pocket Growth,Kubernetes (GKE),27/03/2025,1685.3,1862.66,1292.77
+Retail,Services,Ad Targeting,GCP Cloud Storage,27/03/2025,1952.45,2135.79,1605.46
+Retail,Advertisement,Lending Scoring,GCP BigQuery,27/03/2025,721.97,798.86,609.82
+Retail,Platform,Search Relevance,AWS S3,27/03/2025,1322.86,1464.24,1000.03
+Fintech,Lending,CrossBorder Expansion,AWS Redshift,27/03/2025,2369.69,2650.32,1792.18
+Fintech,Bank account,Pocket Growth,AWS S3,27/03/2025,1555.27,1702.77,1239.18
+Retail,Platform,Search Relevance,Kubernetes (GKE),28/03/2025,1431.17,1570.0,1124.57
+Retail,Platform,Pocket Growth,AWS Lambda,28/03/2025,837.07,931.23,672.79
+Retail,Advertisement,Lending Scoring,AWS EC2,28/03/2025,801.61,881.95,647.72
+Fintech,Transfers,Fraud Shield,AWS S3,28/03/2025,500.81,555.63,419.71
+Fintech,Lending,Logistics Optimization,AWS Redshift,29/03/2025,816.03,896.32,685.73
+Fintech,Lending,CrossBorder Expansion,AWS Redshift,29/03/2025,1949.35,2122.1,1611.58
+Retail,Delivery,Search Relevance,AWS Redshift,29/03/2025,1570.46,1742.91,1203.5
+Retail,Services,Checkout Revamp,GCP Cloud Storage,29/03/2025,419.43,455.19,350.4
+Fintech,Lending,Shipping Automation,Databricks,30/03/2025,337.28,366.94,279.04
+Retail,Advertisement,Seller Onboarding 2.0,GCP BigQuery,30/03/2025,434.9,480.6,345.81
+Fintech,Deposits,CrossBorder Expansion,AWS EC2,30/03/2025,2853.38,3166.94,2363.99
+Fintech,Bank account,Seller Onboarding 2.0,AWS S3,30/03/2025,1742.99,1944.81,1453.09
+Retail,Platform,Fraud Shield,AWS S3,30/03/2025,479.59,523.19,380.64
+Retail,Services,Fraud Shield,AWS S3,30/03/2025,489.88,531.24,398.36
+Retail,Advertisement,Seller Onboarding 2.0,Databricks,30/03/2025,585.76,655.02,461.22
+Retail,Advertisement,Pocket Growth,AWS EC2,31/03/2025,1511.25,1641.49,1146.71
+Fintech,Lending,CrossBorder Expansion,AWS S3,31/03/2025,1599.44,1740.04,1335.37
+Fintech,Bank account,Pocket Growth,AWS S3,31/03/2025,1472.98,1607.99,1117.49
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),31/03/2025,691.6,761.57,525.44
+Fintech,Lending,Pocket Growth,AWS S3,31/03/2025,1264.58,1410.41,970.05
+Retail,Promotion,Search Relevance,AWS Redshift,01/04/2025,1751.46,1944.86,1378.17
+Fintech,Lending,Fraud Shield,Databricks,01/04/2025,1387.41,1537.7,1093.26
+Fintech,Lending,Fraud Shield,Databricks,01/04/2025,904.39,983.08,710.92
+Fintech,Bank account,Lending Scoring,GCP Cloud Run,01/04/2025,371.03,406.02,289.76
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,01/04/2025,539.87,593.39,458.0
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,02/04/2025,588.88,639.46,444.13
+Fintech,Lending,Logistics Optimization,AWS Lambda,02/04/2025,874.92,954.49,692.45
+Retail,Advertisement,Logistics Optimization,GCP BigQuery,02/04/2025,1160.74,1267.91,895.92
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,02/04/2025,482.14,523.17,391.63
+Fintech,Pocket,Fraud Shield,AWS S3,02/04/2025,545.27,600.9,462.81
+Retail,Delivery,Search Relevance,AWS EC2,02/04/2025,435.94,483.11,348.33
+Fintech,Lending,CrossBorder Expansion,Databricks,03/04/2025,794.99,860.81,635.42
+Retail,Delivery,Pocket Growth,AWS Redshift,03/04/2025,234.86,258.17,189.37
+Fintech,Transfers,Fraud Shield,AWS S3,03/04/2025,433.96,482.25,354.12
+Retail,Advertisement,Shipping Automation,AWS EC2,03/04/2025,369.91,410.57,305.18
+Fintech,Lending,Logistics Optimization,Databricks,03/04/2025,170.16,189.32,135.66
+Fintech,Transfers,Search Relevance,AWS S3,03/04/2025,1249.7,1372.08,1015.35
+Fintech,Pocket,Ad Targeting,AWS S3,04/04/2025,523.11,582.13,393.91
+Fintech,Bank account,Pocket Growth,Azure Data Lake,04/04/2025,1910.29,2081.51,1590.72
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,04/04/2025,11385.7,12460.88,9313.88
+Retail,Services,Checkout Revamp,AWS Lambda,04/04/2025,1739.69,1891.14,1427.6
+Fintech,Deposits,Fraud Shield,AWS Redshift,04/04/2025,2168.9,2382.97,1725.73
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),04/04/2025,1297.82,1422.0,1038.35
+Fintech,Pocket,CrossBorder Expansion,GCP BigQuery,04/04/2025,1994.34,2173.11,1566.81
+Retail,Advertisement,Pocket Growth,Databricks,05/04/2025,1141.97,1267.66,862.18
+Retail,Platform,Fraud Shield,Kubernetes (GKE),05/04/2025,1191.09,1301.33,978.45
+Retail,Services,Fraud Shield,AWS S3,05/04/2025,582.67,635.65,454.91
+Fintech,Lending,Pocket Growth,AWS Lambda,05/04/2025,499.73,542.33,423.52
+Fintech,Transfers,Fraud Shield,AWS Redshift,06/04/2025,2389.7,2622.82,1968.54
+Retail,Delivery,Fraud Shield,AWS Redshift,06/04/2025,1870.58,2042.9,1503.25
+Retail,Delivery,Search Relevance,AWS EC2,06/04/2025,415.69,455.09,352.05
+Retail,Advertisement,Shipping Automation,AWS EC2,06/04/2025,356.63,388.52,281.11
+Fintech,Deposits,Logistics Optimization,Databricks,06/04/2025,138.1,153.36,108.01
+Fintech,Lending,Pocket Growth,AWS Lambda,07/04/2025,1017.41,1136.65,788.83
+Retail,Promotion,CrossBorder Expansion,AWS S3,07/04/2025,1798.09,1977.75,1435.49
+Retail,Services,Seller Onboarding 2.0,AWS S3,07/04/2025,2068.84,2287.56,1633.57
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),07/04/2025,834.62,930.34,676.37
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,07/04/2025,550.65,616.7,465.78
+Retail,Services,Seller Onboarding 2.0,GCP BigQuery,07/04/2025,329.53,363.98,276.81
+Retail,Services,Lending Scoring,AWS S3,08/04/2025,407.55,454.66,319.72
+Retail,Advertisement,Shipping Automation,Databricks,08/04/2025,262.79,293.37,197.21
+Fintech,Pocket,CrossBorder Expansion,AWS S3,08/04/2025,1547.99,1720.83,1313.34
+Fintech,Deposits,Logistics Optimization,AWS Redshift,08/04/2025,989.54,1086.95,785.93
+Fintech,Deposits,Pocket Growth,AWS EC2,08/04/2025,2035.23,2204.65,1577.1
+Fintech,Deposits,CrossBorder Expansion,AWS EC2,08/04/2025,1166.11,1260.14,894.79
+Retail,Advertisement,Shipping Automation,Databricks,09/04/2025,206.6,227.07,164.35
+Fintech,Deposits,Logistics Optimization,AWS EC2,09/04/2025,1753.8,1928.78,1382.01
+Retail,Promotion,CrossBorder Expansion,AWS Redshift,09/04/2025,2225.04,2439.3,1736.26
+Retail,Delivery,Pocket Growth,AWS EC2,09/04/2025,2268.22,2501.23,1733.16
+Retail,Services,Fraud Shield,GCP BigQuery,10/04/2025,2140.19,2358.67,1792.99
+Fintech,Bank account,Seller Onboarding 2.0,Azure Data Lake,10/04/2025,1491.5,1660.74,1129.64
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,10/04/2025,145.28,157.53,123.11
+Fintech,Bank account,CrossBorder Expansion,AWS EC2,10/04/2025,1790.02,1949.34,1371.84
+Fintech,Pocket,Ad Targeting,GCP BigQuery,10/04/2025,2180.89,2424.54,1837.02
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),10/04/2025,848.66,945.33,704.84
+Retail,Delivery,CrossBorder Expansion,Kubernetes (GKE),11/04/2025,200.42,224.43,170.28
+Fintech,Lending,Pocket Growth,Databricks,11/04/2025,970.26,1081.76,781.52
+Retail,Delivery,Pocket Growth,AWS Redshift,11/04/2025,229.62,256.16,187.5
+Fintech,Lending,Pocket Growth,AWS Lambda,11/04/2025,538.2,588.02,448.54
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,11/04/2025,582.76,638.74,469.06
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,12/04/2025,1860.46,2029.25,1506.53
+Fintech,Bank account,Lending Scoring,AWS EC2,12/04/2025,836.85,924.09,647.08
+Fintech,Deposits,Fraud Shield,GCP Cloud Storage,12/04/2025,2765.98,3091.12,2104.04
+Retail,Platform,Search Relevance,AWS Lambda,12/04/2025,192.35,210.39,150.94
+Retail,Promotion,Lending Scoring,AWS S3,13/04/2025,812.28,895.36,680.33
+Retail,Services,Ad Targeting,AWS S3,13/04/2025,527.02,575.43,432.4
+Fintech,Lending,Shipping Automation,AWS Lambda,13/04/2025,1493.99,1623.66,1133.44
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),13/04/2025,1112.14,1209.79,935.45
+Retail,Advertisement,Pocket Growth,AWS EC2,14/04/2025,2618.08,2833.59,2118.85
+Fintech,Transfers,Search Relevance,AWS Redshift,14/04/2025,2207.84,2468.31,1668.58
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,14/04/2025,615.33,674.47,464.53
+Fintech,Lending,CrossBorder Expansion,AWS S3,14/04/2025,11782.75,13118.5,9530.83
+Retail,Advertisement,Logistics Optimization,Databricks,14/04/2025,229.35,253.95,179.64
+Retail,Delivery,Seller Onboarding 2.0,AWS EC2,15/04/2025,164.01,178.39,131.91
+Fintech,Lending,Logistics Optimization,Databricks,15/04/2025,195.26,212.25,151.26
+Fintech,Lending,Fraud Shield,AWS Lambda,15/04/2025,216.9,241.3,183.68
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,15/04/2025,738.65,805.57,617.21
+Retail,Services,Ad Targeting,GCP Cloud Storage,15/04/2025,1461.96,1632.32,1152.87
+Retail,Advertisement,Logistics Optimization,GCP BigQuery,16/04/2025,1243.26,1349.69,1027.86
+Retail,Promotion,Seller Onboarding 2.0,AWS S3,16/04/2025,2098.75,2323.54,1644.15
+Fintech,Bank account,Shipping Automation,AWS EC2,16/04/2025,343.59,382.27,279.98
+Fintech,Lending,Fraud Shield,AWS S3,16/04/2025,464.62,506.16,353.73
+Fintech,Pocket,Lending Scoring,Azure Data Lake,16/04/2025,2273.86,2480.89,1746.49
+Retail,Platform,Search Relevance,AWS S3,17/04/2025,1085.05,1213.71,868.82
+Retail,Delivery,Checkout Revamp,AWS Redshift,17/04/2025,1182.85,1290.0,914.0
+Fintech,Pocket,Ad Targeting,GCP BigQuery,17/04/2025,2440.24,2677.42,2008.04
+Fintech,Pocket,CrossBorder Expansion,AWS S3,17/04/2025,1490.49,1635.51,1193.24
+Fintech,Transfers,Search Relevance,AWS Redshift,17/04/2025,2104.65,2294.32,1747.39
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,17/04/2025,1007.75,1119.64,769.83
+Retail,Services,Ad Targeting,GCP Cloud Storage,18/04/2025,1468.35,1631.15,1127.24
+Retail,Delivery,Fraud Shield,AWS Redshift,18/04/2025,2586.99,2833.1,1965.56
+Retail,Services,Seller Onboarding 2.0,AWS Lambda,18/04/2025,2535.29,2822.8,1932.53
+Fintech,Deposits,Logistics Optimization,AWS Lambda,18/04/2025,614.75,669.17,463.54
+Retail,Advertisement,Seller Onboarding 2.0,Databricks,18/04/2025,660.95,713.94,546.72
+Fintech,Deposits,Fraud Shield,AWS Lambda,19/04/2025,279.68,308.45,211.67
+Retail,Promotion,Ad Targeting,GCP Cloud Storage,19/04/2025,1855.42,2077.63,1471.12
+Retail,Delivery,Pocket Growth,Kubernetes (GKE),19/04/2025,1747.47,1889.97,1411.52
+Fintech,Lending,Fraud Shield,AWS S3,19/04/2025,515.66,561.2,409.41
+Retail,Promotion,Seller Onboarding 2.0,AWS Redshift,19/04/2025,626.82,689.98,511.32
+Retail,Delivery,Seller Onboarding 2.0,AWS Redshift,20/04/2025,416.87,463.73,342.31
+Fintech,Transfers,Search Relevance,GCP BigQuery,20/04/2025,619.04,670.76,511.24
+Fintech,Lending,Shipping Automation,AWS Redshift,20/04/2025,867.02,950.09,729.82
+Retail,Platform,Search Relevance,AWS Lambda,20/04/2025,131.76,146.24,105.46
+Retail,Services,Search Relevance,GCP Cloud Storage,20/04/2025,1794.78,1965.03,1366.23
+Fintech,Lending,CrossBorder Expansion,Databricks,21/04/2025,781.73,850.18,615.21
+Retail,Advertisement,Logistics Optimization,GCP BigQuery,21/04/2025,1076.49,1171.02,858.93
+Retail,Advertisement,Shipping Automation,AWS EC2,21/04/2025,324.96,356.29,262.29
+Retail,Platform,Search Relevance,AWS Lambda,21/04/2025,154.23,169.52,123.93
+Retail,Promotion,Search Relevance,GCP Cloud Storage,21/04/2025,1226.27,1366.65,1016.67
+Retail,Promotion,Lending Scoring,AWS S3,21/04/2025,475.14,525.36,364.77
+Fintech,Transfers,Fraud Shield,AWS S3,22/04/2025,585.31,648.3,485.9
+Retail,Promotion,Lending Scoring,GCP Cloud Storage,22/04/2025,1299.78,1454.87,1011.67
+Fintech,Lending,Fraud Shield,AWS S3,22/04/2025,533.27,584.72,412.75
+Fintech,Lending,Pocket Growth,AWS S3,22/04/2025,1352.92,1482.98,1072.21
+Fintech,Pocket,Ad Targeting,AWS Lambda,22/04/2025,466.89,521.49,356.57
+Fintech,Lending,CrossBorder Expansion,AWS S3,23/04/2025,1742.51,1899.05,1430.42
+Retail,Advertisement,Shipping Automation,GCP BigQuery,23/04/2025,2119.62,2351.07,1614.81
+Retail,Advertisement,Logistics Optimization,GCP BigQuery,23/04/2025,991.58,1100.83,770.51
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,23/04/2025,2116.84,2294.47,1630.23
+Retail,Advertisement,Lending Scoring,AWS EC2,23/04/2025,884.06,971.34,692.7
+Fintech,Deposits,CrossBorder Expansion,GCP Cloud Storage,23/04/2025,2272.81,2472.86,1739.53
+Fintech,Lending,Fraud Shield,AWS Redshift,23/04/2025,2447.4,2661.34,1837.24
+Retail,Platform,Search Relevance,AWS S3,24/04/2025,1043.84,1146.71,843.41
+Retail,Services,Fraud Shield,AWS Lambda,24/04/2025,257.74,281.34,198.1
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,24/04/2025,2627.05,2920.87,2037.39
+Retail,Services,Ad Targeting,AWS S3,24/04/2025,572.03,638.56,460.32
+Retail,Delivery,Checkout Revamp,AWS EC2,25/04/2025,856.31,952.31,648.49
+Fintech,Transfers,Fraud Shield,AWS S3,25/04/2025,493.09,537.79,399.68
+Retail,Delivery,Pocket Growth,AWS EC2,25/04/2025,2474.2,2699.27,1963.16
+Retail,Platform,Search Relevance,AWS Lambda,25/04/2025,123.21,134.32,103.42
+Retail,Services,Ad Targeting,AWS Lambda,25/04/2025,121.26,131.61,100.33
+Retail,Services,Checkout Revamp,AWS Lambda,26/04/2025,1573.39,1758.66,1205.11
+Fintech,Bank account,Pocket Growth,AWS EC2,26/04/2025,1656.64,1815.81,1342.45
+Retail,Services,Seller Onboarding 2.0,AWS S3,26/04/2025,2360.32,2570.36,1913.25
+Retail,Platform,Fraud Shield,Kubernetes (GKE),26/04/2025,1743.95,1942.53,1439.46
+Retail,Services,Ad Targeting,AWS Lambda,27/04/2025,99.53,109.08,79.71
+Fintech,Lending,Shipping Automation,AWS Lambda,27/04/2025,1401.09,1515.14,1078.02
+Fintech,Pocket,CrossBorder Expansion,Azure Data Lake,27/04/2025,410.34,445.82,312.05
+Retail,Promotion,Lending Scoring,AWS Redshift,27/04/2025,696.99,770.57,587.56
+Fintech,Deposits,Fraud Shield,AWS Lambda,27/04/2025,259.81,288.73,205.9
+Retail,Advertisement,Lending Scoring,Databricks,27/04/2025,1843.72,2006.77,1481.01
+Retail,Platform,Fraud Shield,Kubernetes (GKE),27/04/2025,1556.69,1738.35,1227.56
+Retail,Services,Search Relevance,GCP BigQuery,28/04/2025,815.94,908.99,657.05
+Fintech,Transfers,Fraud Shield,AWS S3,28/04/2025,483.64,538.74,391.81
+Retail,Advertisement,Pocket Growth,GCP BigQuery,28/04/2025,837.47,912.1,672.33
+Fintech,Bank account,Pocket Growth,Azure Data Lake,28/04/2025,1163.73,1259.18,921.44
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,29/04/2025,935.31,1042.59,748.16
+Fintech,Pocket,Lending Scoring,AWS Lambda,29/04/2025,1362.57,1488.24,1093.85
+Retail,Services,Checkout Revamp,GCP Cloud Storage,29/04/2025,421.4,465.55,323.73
+Fintech,Lending,Logistics Optimization,AWS S3,29/04/2025,269.55,299.31,209.02
+Retail,Services,Fraud Shield,AWS S3,29/04/2025,472.99,513.26,385.89
+Retail,Advertisement,Pocket Growth,Databricks,29/04/2025,1025.18,1139.21,789.33
+Retail,Services,Ad Targeting,AWS Lambda,29/04/2025,74.75,83.54,57.16
+Retail,Services,Fraud Shield,AWS Lambda,30/04/2025,248.76,275.91,207.63
+Retail,Services,Lending Scoring,AWS Lambda,30/04/2025,1654.23,1815.76,1309.71
+Fintech,Lending,Logistics Optimization,AWS S3,30/04/2025,451.82,503.81,371.16
+Retail,Services,Checkout Revamp,GCP Cloud Storage,30/04/2025,380.98,419.5,295.67
+Retail,Services,Fraud Shield,GCP Cloud Storage,30/04/2025,1897.25,2105.55,1567.36
+Fintech,Bank account,Lending Scoring,GCP Cloud Storage,30/04/2025,1371.79,1526.55,1073.92
+Fintech,Deposits,Checkout Revamp,Databricks,01/05/2025,2016.29,2238.03,1662.41
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,01/05/2025,2517.32,2747.69,2011.05
+Retail,Delivery,CrossBorder Expansion,AWS Redshift,01/05/2025,1666.68,1807.87,1258.57
+Fintech,Deposits,CrossBorder Expansion,GCP Cloud Storage,01/05/2025,1979.01,2156.2,1606.7
+Fintech,Deposits,Search Relevance,GCP Cloud Storage,01/05/2025,1557.43,1713.35,1187.43
+Retail,Delivery,Search Relevance,AWS EC2,02/05/2025,537.21,591.05,403.61
+Retail,Advertisement,Logistics Optimization,AWS EC2,02/05/2025,1001.25,1104.69,763.47
+Fintech,Deposits,Checkout Revamp,AWS Redshift,02/05/2025,1559.18,1708.56,1299.44
+Fintech,Bank account,Seller Onboarding 2.0,Azure Data Lake,02/05/2025,1275.9,1418.13,979.94
+Retail,Delivery,Fraud Shield,AWS EC2,02/05/2025,1459.9,1630.02,1236.22
+Retail,Platform,Fraud Shield,AWS Lambda,02/05/2025,223.98,244.11,181.58
+Fintech,Bank account,Lending Scoring,Azure Data Lake,02/05/2025,2112.01,2343.19,1611.31
+Retail,Delivery,Fraud Shield,AWS Redshift,03/05/2025,2127.42,2355.3,1661.78
+Retail,Delivery,Checkout Revamp,AWS EC2,03/05/2025,1136.71,1251.43,905.65
+Retail,Promotion,Search Relevance,GCP Cloud Storage,03/05/2025,1539.3,1674.05,1248.7
+Retail,Delivery,Pocket Growth,AWS EC2,03/05/2025,1827.86,2032.23,1405.21
+Fintech,Deposits,Checkout Revamp,GCP Cloud Storage,03/05/2025,306.91,343.25,239.09
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,03/05/2025,2378.19,2637.12,1910.07
+Fintech,Deposits,CrossBorder Expansion,GCP Cloud Storage,04/05/2025,2277.41,2543.22,1732.55
+Fintech,Transfers,Fraud Shield,AWS Redshift,04/05/2025,1322.29,1480.13,1093.54
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,04/05/2025,485.99,531.71,404.81
+Retail,Platform,Search Relevance,Kubernetes (GKE),04/05/2025,1279.63,1414.67,1005.43
+Fintech,Pocket,Fraud Shield,AWS S3,04/05/2025,493.74,542.6,371.69
+Fintech,Bank account,Lending Scoring,GCP Cloud Run,05/05/2025,420.72,470.98,347.21
+Fintech,Lending,Shipping Automation,AWS Lambda,05/05/2025,1210.95,1312.37,999.07
+Fintech,Bank account,Lending Scoring,Kubernetes (GKE),05/05/2025,245.08,268.73,204.9
+Retail,Services,Search Relevance,GCP BigQuery,05/05/2025,569.89,635.44,435.36
+Retail,Delivery,Checkout Revamp,Kubernetes (GKE),05/05/2025,1224.52,1336.39,1013.12
+Retail,Promotion,CrossBorder Expansion,AWS Redshift,05/05/2025,1785.72,1984.85,1428.01
+Retail,Platform,Pocket Growth,Kubernetes (GKE),05/05/2025,1396.65,1529.77,1048.76
+Retail,Promotion,Search Relevance,GCP Cloud Storage,06/05/2025,1494.55,1672.69,1268.55
+Retail,Services,Seller Onboarding 2.0,AWS S3,06/05/2025,2047.47,2283.63,1626.41
+Fintech,Pocket,Lending Scoring,AWS S3,06/05/2025,780.28,852.1,623.26
+Retail,Delivery,Checkout Revamp,AWS Redshift,06/05/2025,1022.16,1135.43,786.3
+Retail,Delivery,Pocket Growth,AWS EC2,06/05/2025,1745.9,1909.1,1421.99
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,06/05/2025,664.85,734.16,537.84
+Fintech,Bank account,Pocket Growth,GCP Cloud Run,06/05/2025,1268.22,1403.08,1056.69
+Fintech,Transfers,Search Relevance,GCP Cloud Run,07/05/2025,773.81,861.4,600.42
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,07/05/2025,473.33,511.66,365.19
+Retail,Promotion,Shipping Automation,AWS S3,07/05/2025,2046.48,2228.22,1711.54
+Retail,Advertisement,Lending Scoring,GCP BigQuery,07/05/2025,770.7,854.3,624.77
+Fintech,Lending,Shipping Automation,AWS S3,07/05/2025,1108.19,1221.83,843.01
+Fintech,Deposits,Pocket Growth,Databricks,07/05/2025,1179.84,1297.61,1002.54
+Fintech,Deposits,Pocket Growth,Databricks,08/05/2025,1175.3,1271.92,963.89
+Retail,Services,Checkout Revamp,GCP Cloud Storage,08/05/2025,322.26,352.53,256.04
+Retail,Platform,Search Relevance,AWS Lambda,08/05/2025,135.75,151.31,110.85
+Retail,Advertisement,Shipping Automation,GCP BigQuery,08/05/2025,1861.56,2012.79,1531.68
+Retail,Delivery,CrossBorder Expansion,AWS EC2,08/05/2025,1457.54,1597.26,1171.86
+Retail,Promotion,Shipping Automation,AWS Redshift,09/05/2025,980.53,1096.05,815.66
+Fintech,Bank account,Lending Scoring,Azure Data Lake,09/05/2025,1822.95,1972.49,1452.96
+Retail,Platform,Search Relevance,AWS S3,09/05/2025,1375.9,1527.23,1072.28
+Retail,Platform,Fraud Shield,AWS Lambda,09/05/2025,251.67,274.4,199.44
+Retail,Promotion,Ad Targeting,AWS Redshift,09/05/2025,2023.53,2255.55,1701.16
+Fintech,Deposits,Fraud Shield,Kubernetes (GKE),10/05/2025,1608.42,1785.09,1231.34
+Fintech,Transfers,Fraud Shield,GCP BigQuery,10/05/2025,2377.19,2651.58,1979.01
+Fintech,Bank account,Shipping Automation,Kubernetes (GKE),10/05/2025,177.99,193.77,137.68
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),10/05/2025,1713.09,1886.54,1394.36
+Retail,Promotion,Ad Targeting,AWS S3,10/05/2025,511.33,568.18,394.61
+Fintech,Bank account,Lending Scoring,AWS S3,11/05/2025,912.55,994.52,756.84
+Retail,Platform,Pocket Growth,AWS S3,11/05/2025,1594.36,1736.62,1325.45
+Fintech,Lending,Pocket Growth,Databricks,11/05/2025,1016.99,1099.45,813.89
+Retail,Services,Seller Onboarding 2.0,GCP BigQuery,11/05/2025,486.01,543.53,411.51
+Fintech,Bank account,Seller Onboarding 2.0,GCP Cloud Storage,11/05/2025,425.86,472.02,352.39
+Fintech,Pocket,Ad Targeting,GCP BigQuery,12/05/2025,1944.63,2149.63,1512.14
+Fintech,Transfers,Fraud Shield,AWS S3,12/05/2025,380.12,421.84,291.27
+Fintech,Bank account,Pocket Growth,Kubernetes (GKE),12/05/2025,2133.45,2349.49,1796.2
+Retail,Promotion,Shipping Automation,AWS Redshift,12/05/2025,1419.48,1560.07,1081.35
+Retail,Promotion,Ad Targeting,AWS S3,12/05/2025,539.5,592.36,415.55
+Fintech,Transfers,Fraud Shield,GCP BigQuery,12/05/2025,2403.21,2657.03,1833.72
+Fintech,Deposits,Search Relevance,Databricks,12/05/2025,527.32,573.76,411.4
+Fintech,Lending,Logistics Optimization,AWS Redshift,13/05/2025,834.45,930.85,653.03
+Retail,Delivery,Pocket Growth,Kubernetes (GKE),13/05/2025,2699.12,3002.69,2152.52
+Retail,Services,Search Relevance,GCP BigQuery,13/05/2025,638.84,698.88,501.31
+Fintech,Deposits,Pocket Growth,GCP Cloud Storage,13/05/2025,805.95,889.08,610.98
+Retail,Services,Seller Onboarding 2.0,AWS S3,14/05/2025,2446.8,2656.34,2055.18
+Fintech,Deposits,CrossBorder Expansion,AWS Redshift,14/05/2025,1790.83,2003.75,1465.66
+Retail,Platform,Fraud Shield,AWS S3,14/05/2025,615.19,686.62,518.45
+Fintech,Bank account,Lending Scoring,GCP Cloud Run,14/05/2025,347.48,388.09,262.53
+Retail,Advertisement,Lending Scoring,AWS EC2,15/05/2025,1001.12,1094.51,806.38
+Retail,Delivery,Pocket Growth,AWS Redshift,15/05/2025,219.89,238.96,172.05
+Retail,Platform,Fraud Shield,AWS S3,15/05/2025,505.52,550.24,387.17
+Fintech,Pocket,Lending Scoring,AWS S3,15/05/2025,614.36,665.72,461.32
+Retail,Platform,Fraud Shield,Kubernetes (GKE),15/05/2025,1283.07,1391.88,1069.85
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,15/05/2025,538.44,583.05,414.62
+Retail,Platform,Pocket Growth,AWS Lambda,16/05/2025,1118.39,1252.14,851.38
+Retail,Platform,Fraud Shield,AWS S3,16/05/2025,450.11,487.45,380.39
+Retail,Delivery,Search Relevance,Kubernetes (GKE),16/05/2025,1462.91,1587.7,1133.16
+Retail,Platform,Search Relevance,AWS Lambda,16/05/2025,175.77,195.65,143.17
+Retail,Platform,Fraud Shield,Kubernetes (GKE),16/05/2025,1465.07,1616.28,1150.29
+Retail,Platform,Pocket Growth,Kubernetes (GKE),16/05/2025,2474.81,2749.45,1976.37
+Retail,Platform,Search Relevance,Kubernetes (GKE),16/05/2025,1344.93,1486.47,1108.26
+Retail,Platform,Pocket Growth,AWS S3,17/05/2025,1852.26,2065.8,1549.37
+Fintech,Bank account,Pocket Growth,GCP Cloud Storage,17/05/2025,808.31,893.62,677.61
+Retail,Delivery,Pocket Growth,AWS EC2,17/05/2025,2150.87,2367.86,1806.02
+Fintech,Deposits,Fraud Shield,AWS EC2,17/05/2025,279.6,309.94,219.83
+Fintech,Pocket,Ad Targeting,GCP BigQuery,17/05/2025,1211.47,1330.07,987.18
+Retail,Delivery,Search Relevance,AWS Redshift,17/05/2025,2244.93,2455.6,1859.56
+Retail,Platform,Fraud Shield,AWS S3,18/05/2025,384.91,422.91,300.54
+Retail,Promotion,Ad Targeting,GCP Cloud Storage,18/05/2025,1793.56,1949.22,1401.33
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,18/05/2025,1126.38,1252.38,896.69
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,18/05/2025,444.44,484.63,336.22
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),18/05/2025,1721.74,1870.05,1397.12
+Retail,Delivery,Checkout Revamp,AWS EC2,18/05/2025,3553.78,3873.11,2723.67
+Retail,Services,Ad Targeting,GCP Cloud Storage,18/05/2025,1924.28,2143.03,1621.18
+Retail,Services,Ad Targeting,GCP BigQuery,19/05/2025,1514.04,1655.16,1174.92
+Retail,Promotion,Shipping Automation,AWS S3,19/05/2025,2419.06,2678.96,1817.09
+Retail,Platform,Search Relevance,AWS S3,19/05/2025,953.8,1062.78,729.98
+Fintech,Bank account,Shipping Automation,GCP Cloud Storage,19/05/2025,904.88,980.09,716.7
+Retail,Services,Lending Scoring,AWS S3,19/05/2025,546.5,606.95,430.27
+Fintech,Bank account,Seller Onboarding 2.0,Azure Data Lake,19/05/2025,953.7,1041.73,776.95
+Retail,Services,Ad Targeting,AWS S3,19/05/2025,575.35,626.36,449.95
+Fintech,Deposits,Fraud Shield,Kubernetes (GKE),20/05/2025,1965.19,2176.56,1519.01
+Fintech,Transfers,Fraud Shield,AWS S3,20/05/2025,372.34,415.67,279.32
+Fintech,Deposits,CrossBorder Expansion,AWS EC2,20/05/2025,1812.52,1978.91,1451.38
+Fintech,Pocket,Fraud Shield,Azure Data Lake,20/05/2025,354.69,391.14,299.31
+Retail,Advertisement,Shipping Automation,GCP BigQuery,20/05/2025,2136.74,2332.45,1688.91
+Fintech,Lending,Shipping Automation,AWS S3,21/05/2025,1537.57,1694.66,1288.63
+Fintech,Bank account,CrossBorder Expansion,AWS EC2,21/05/2025,2732.89,3019.5,2256.07
+Retail,Platform,Pocket Growth,Kubernetes (GKE),21/05/2025,9576.1,10575.98,7824.84
+Fintech,Deposits,Fraud Shield,GCP Cloud Storage,21/05/2025,1989.76,2198.57,1545.84
+Fintech,Deposits,Search Relevance,Databricks,21/05/2025,665.12,721.93,553.13
+Fintech,Deposits,Checkout Revamp,Kubernetes (GKE),21/05/2025,1887.29,2090.63,1572.91
+Fintech,Deposits,Fraud Shield,AWS Lambda,21/05/2025,234.89,260.03,198.6
+Fintech,Lending,CrossBorder Expansion,AWS Redshift,22/05/2025,1416.3,1568.27,1080.18
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,22/05/2025,639.84,692.92,499.49
+Fintech,Deposits,Search Relevance,AWS Redshift,22/05/2025,2165.43,2377.37,1831.96
+Retail,Delivery,Checkout Revamp,AWS EC2,22/05/2025,847.66,929.34,718.11
+Fintech,Lending,Shipping Automation,Databricks,22/05/2025,507.81,550.2,403.27
+Fintech,Transfers,Search Relevance,AWS Redshift,22/05/2025,2563.61,2791.5,2106.64
+Retail,Services,Fraud Shield,GCP BigQuery,23/05/2025,1631.58,1790.88,1289.48
+Fintech,Deposits,CrossBorder Expansion,Kubernetes (GKE),23/05/2025,174.54,193.69,140.78
+Fintech,Lending,Logistics Optimization,Databricks,23/05/2025,189.74,206.72,143.76
+Fintech,Deposits,Search Relevance,AWS Lambda,23/05/2025,249.13,277.33,204.59
+Fintech,Pocket,Ad Targeting,AWS Lambda,24/05/2025,92.84,102.3,72.61
+Fintech,Pocket,Lending Scoring,GCP Cloud Run,24/05/2025,332.85,369.6,281.12
+Retail,Services,Seller Onboarding 2.0,AWS Lambda,24/05/2025,2176.59,2391.86,1642.05
+Fintech,Bank account,Pocket Growth,AWS S3,24/05/2025,1713.16,1884.42,1288.17
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,24/05/2025,581.56,642.5,451.34
+Fintech,Bank account,Lending Scoring,AWS S3,24/05/2025,950.78,1062.13,763.93
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,24/05/2025,1199.32,1318.85,993.03
+Retail,Platform,Fraud Shield,AWS Lambda,25/05/2025,281.4,309.86,216.33
+Fintech,Pocket,Ad Targeting,GCP Cloud Run,25/05/2025,2402.5,2652.56,1865.22
+Fintech,Bank account,Pocket Growth,GCP Cloud Storage,25/05/2025,721.32,800.31,597.12
+Retail,Platform,Pocket Growth,AWS S3,25/05/2025,1500.23,1624.56,1207.5
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,25/05/2025,2640.94,2906.69,2122.58
+Retail,Promotion,Seller Onboarding 2.0,AWS Redshift,25/05/2025,470.82,517.56,361.29
+Fintech,Pocket,Lending Scoring,AWS S3,25/05/2025,677.46,756.63,529.51
+Retail,Services,Search Relevance,GCP Cloud Storage,26/05/2025,1594.68,1753.73,1252.91
+Fintech,Deposits,Pocket Growth,Kubernetes (GKE),26/05/2025,1720.47,1890.33,1350.6
+Retail,Advertisement,Shipping Automation,GCP BigQuery,26/05/2025,1420.2,1588.48,1168.76
+Retail,Platform,Fraud Shield,AWS S3,26/05/2025,407.11,447.01,330.91
+Fintech,Transfers,Fraud Shield,AWS S3,26/05/2025,2752.11,2992.19,2326.73
+Fintech,Bank account,Pocket Growth,GCP Cloud Storage,26/05/2025,602.76,656.21,464.91
+Fintech,Bank account,CrossBorder Expansion,GCP Cloud Run,27/05/2025,281.85,305.47,227.37
+Fintech,Pocket,Fraud Shield,GCP Cloud Run,27/05/2025,548.89,592.81,442.5
+Fintech,Lending,CrossBorder Expansion,AWS Redshift,27/05/2025,1993.81,2187.77,1645.82
+Retail,Delivery,CrossBorder Expansion,Kubernetes (GKE),27/05/2025,174.37,193.68,144.56
+Retail,Platform,Search Relevance,AWS S3,27/05/2025,1092.28,1211.71,864.23
+Retail,Services,Search Relevance,AWS Lambda,27/05/2025,669.04,723.42,553.12
+Fintech,Pocket,CrossBorder Expansion,GCP Cloud Run,28/05/2025,204.42,225.44,172.45
+Fintech,Bank account,Pocket Growth,Azure Data Lake,28/05/2025,1444.47,1568.94,1116.94
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,28/05/2025,573.24,640.68,465.67
+Retail,Platform,Search Relevance,Kubernetes (GKE),28/05/2025,1411.86,1534.26,1146.4
+Fintech,Transfers,Seller Onboarding 2.0,AWS S3,28/05/2025,2298.7,2540.21,1854.75
+Retail,Promotion,Lending Scoring,AWS S3,28/05/2025,587.58,642.26,451.56
+Fintech,Lending,CrossBorder Expansion,AWS Lambda,29/05/2025,1932.5,2136.69,1580.62
+Fintech,Deposits,Search Relevance,GCP Cloud Storage,29/05/2025,1540.86,1689.53,1192.92
+Fintech,Pocket,Fraud Shield,Azure Data Lake,29/05/2025,312.79,347.32,236.48
+Retail,Advertisement,Logistics Optimization,Databricks,29/05/2025,167.47,182.41,131.28
+Retail,Platform,Search Relevance,AWS Lambda,29/05/2025,96.24,107.42,77.65
+Fintech,Pocket,Fraud Shield,Azure Data Lake,29/05/2025,313.3,344.64,242.88
+Fintech,Pocket,Fraud Shield,GCP Cloud Run,29/05/2025,842.82,935.73,677.8
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),30/05/2025,2091.46,2329.87,1691.07
+Fintech,Pocket,Fraud Shield,GCP BigQuery,30/05/2025,1920.69,2151.08,1531.69
+Retail,Delivery,Search Relevance,AWS EC2,30/05/2025,405.41,441.48,331.72
+Fintech,Lending,Pocket Growth,Databricks,30/05/2025,1274.97,1391.6,1070.43
+Fintech,Lending,Logistics Optimization,AWS Redshift,30/05/2025,852.16,928.87,688.98
+Fintech,Bank account,Shipping Automation,GCP Cloud Storage,30/05/2025,1669.72,1820.85,1398.58
+Retail,Platform,Fraud Shield,AWS Lambda,30/05/2025,208.41,229.94,168.59
+Retail,Platform,Pocket Growth,Kubernetes (GKE),31/05/2025,2035.97,2279.76,1617.18
+Retail,Promotion,Seller Onboarding 2.0,AWS S3,31/05/2025,2449.73,2742.75,1854.27
+Fintech,Bank account,Shipping Automation,AWS EC2,31/05/2025,350.26,385.66,296.45
+Retail,Advertisement,Logistics Optimization,AWS EC2,31/05/2025,908.75,1004.68,715.96
+Retail,Services,Search Relevance,AWS Lambda,31/05/2025,187.42,208.86,150.73
+Fintech,Bank account,Pocket Growth,GCP Cloud Run,31/05/2025,2840.6,3173.86,2408.76
+Fintech,Deposits,Fraud Shield,AWS Lambda,01/06/2025,216.27,235.34,178.43
+Retail,Delivery,Fraud Shield,AWS EC2,01/06/2025,1600.53,1762.41,1341.49
+Retail,Services,Seller Onboarding 2.0,AWS Lambda,01/06/2025,3687.39,4105.22,3054.34
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,01/06/2025,568.39,620.75,467.52
+Retail,Promotion,CrossBorder Expansion,GCP Cloud Storage,01/06/2025,2179.07,2391.73,1764.76
+Retail,Services,Ad Targeting,AWS Lambda,01/06/2025,123.39,138.13,98.36
+Retail,Promotion,Search Relevance,GCP Cloud Storage,02/06/2025,1371.7,1535.49,1165.81
+Retail,Platform,Pocket Growth,Kubernetes (GKE),02/06/2025,1928.79,2153.0,1608.25
+Fintech,Pocket,Fraud Shield,AWS Lambda,02/06/2025,221.12,245.88,185.89
+Fintech,Deposits,CrossBorder Expansion,Databricks,02/06/2025,967.54,1055.36,769.22
+Retail,Promotion,Seller Onboarding 2.0,AWS S3,02/06/2025,2577.96,2817.28,2106.43
+Retail,Delivery,CrossBorder Expansion,AWS EC2,02/06/2025,1785.17,1967.06,1419.49
+Retail,Platform,Pocket Growth,AWS S3,02/06/2025,1341.08,1478.45,1110.17
+Fintech,Transfers,Fraud Shield,AWS S3,03/06/2025,512.81,564.2,434.65
+Fintech,Bank account,Lending Scoring,AWS EC2,03/06/2025,859.3,949.93,649.51
+Retail,Delivery,Fraud Shield,Kubernetes (GKE),03/06/2025,2506.12,2747.54,2103.05
+Fintech,Deposits,Fraud Shield,AWS Redshift,03/06/2025,2722.06,3021.4,2279.22
+Fintech,Bank account,Pocket Growth,GCP Cloud Storage,03/06/2025,828.53,905.87,692.11
+Retail,Services,Checkout Revamp,AWS S3,03/06/2025,2352.14,2571.42,1768.51
+Retail,Promotion,Seller Onboarding 2.0,AWS Redshift,03/06/2025,576.33,625.37,454.29
+Retail,Delivery,Search Relevance,Kubernetes (GKE),04/06/2025,1495.52,1626.46,1179.93
+Fintech,Lending,Pocket Growth,Databricks,04/06/2025,1165.66,1298.57,875.79
+Fintech,Pocket,CrossBorder Expansion,GCP BigQuery,04/06/2025,2112.57,2319.28,1777.0
+Fintech,Pocket,Ad Targeting,AWS S3,04/06/2025,574.6,625.81,432.42
+Fintech,Transfers,Search Relevance,GCP BigQuery,04/06/2025,670.08,744.04,555.9
+Fintech,Deposits,Logistics Optimization,AWS Redshift,04/06/2025,893.04,984.28,703.44
+Retail,Advertisement,Logistics Optimization,GCP BigQuery,05/06/2025,1205.42,1302.88,973.97
+Fintech,Deposits,CrossBorder Expansion,AWS EC2,05/06/2025,2537.71,2772.84,2059.61
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,05/06/2025,156.39,170.01,118.37
+Retail,Services,Search Relevance,AWS Lambda,05/06/2025,155.52,172.04,129.87
+Fintech,Lending,CrossBorder Expansion,AWS Lambda,05/06/2025,2162.23,2359.0,1622.31
+Fintech,Deposits,Pocket Growth,AWS EC2,06/06/2025,1963.81,2126.02,1594.79
+Retail,Services,Fraud Shield,GCP Cloud Storage,06/06/2025,1672.46,1809.94,1313.09
+Fintech,Bank account,Shipping Automation,GCP Cloud Storage,06/06/2025,1618.19,1785.3,1218.83
+Retail,Services,Checkout Revamp,GCP BigQuery,06/06/2025,599.38,647.85,506.02
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),06/06/2025,1155.13,1286.76,875.26
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,07/06/2025,2281.67,2478.39,1809.87
+Fintech,Bank account,Pocket Growth,Kubernetes (GKE),07/06/2025,2565.83,2833.34,2000.22
+Fintech,Deposits,Logistics Optimization,AWS Lambda,07/06/2025,832.75,914.18,695.41
+Retail,Services,Ad Targeting,GCP Cloud Storage,07/06/2025,1775.99,1949.53,1414.86
+Fintech,Bank account,Pocket Growth,AWS S3,07/06/2025,1370.71,1484.3,1072.78
+Retail,Delivery,Pocket Growth,AWS Redshift,08/06/2025,146.73,163.18,118.02
+Fintech,Deposits,CrossBorder Expansion,GCP Cloud Storage,08/06/2025,2421.58,2701.81,2020.81
+Retail,Platform,Pocket Growth,Kubernetes (GKE),08/06/2025,1595.12,1723.44,1316.92
+Retail,Platform,Pocket Growth,Kubernetes (GKE),08/06/2025,1779.5,1934.58,1360.54
+Retail,Delivery,Fraud Shield,AWS Redshift,09/06/2025,2156.14,2406.59,1825.29
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,09/06/2025,159.86,176.17,124.55
+Fintech,Pocket,Fraud Shield,GCP Cloud Run,09/06/2025,106.4,115.55,79.81
+Fintech,Lending,Shipping Automation,AWS Redshift,09/06/2025,1333.4,1450.89,1132.39
+Retail,Promotion,Search Relevance,AWS S3,11/06/2025,1175.35,1300.41,980.12
+Retail,Promotion,Ad Targeting,AWS Redshift,11/06/2025,2361.48,2618.86,1848.06
+Retail,Services,Fraud Shield,GCP Cloud Storage,11/06/2025,1948.03,2150.58,1644.14
+Retail,Promotion,Search Relevance,AWS S3,11/06/2025,1115.92,1247.74,882.71
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,11/06/2025,2076.51,2283.67,1623.0
+Fintech,Lending,Fraud Shield,AWS S3,11/06/2025,595.17,649.94,470.89
+Retail,Delivery,Fraud Shield,AWS EC2,12/06/2025,1696.58,1864.69,1380.14
+Retail,Delivery,Seller Onboarding 2.0,AWS Redshift,12/06/2025,595.23,651.41,464.44
+Fintech,Pocket,Fraud Shield,AWS Lambda,12/06/2025,244.02,265.73,192.91
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),12/06/2025,1046.61,1132.26,867.88
+Fintech,Lending,Pocket Growth,AWS Redshift,12/06/2025,200.21,219.05,158.91
+Fintech,Pocket,Ad Targeting,GCP Cloud Run,13/06/2025,1165.34,1291.73,887.77
+Fintech,Deposits,CrossBorder Expansion,AWS Redshift,13/06/2025,2250.34,2432.03,1762.73
+Fintech,Lending,Fraud Shield,Databricks,13/06/2025,1325.1,1454.39,1063.82
+Fintech,Pocket,Lending Scoring,AWS Lambda,13/06/2025,1529.97,1691.78,1251.27
+Retail,Advertisement,Seller Onboarding 2.0,Databricks,13/06/2025,669.15,739.02,563.03
+Retail,Delivery,Checkout Revamp,AWS Redshift,14/06/2025,1260.21,1400.18,1040.35
+Fintech,Bank account,Lending Scoring,GCP Cloud Run,14/06/2025,484.93,539.44,411.65
+Retail,Promotion,Seller Onboarding 2.0,AWS Redshift,14/06/2025,644.11,713.98,483.95
+Fintech,Bank account,CrossBorder Expansion,AWS S3,14/06/2025,1974.95,2141.07,1634.77
+Fintech,Deposits,Logistics Optimization,AWS Redshift,15/06/2025,1012.39,1112.61,778.03
+Fintech,Lending,Shipping Automation,AWS Lambda,15/06/2025,2221.77,2453.14,1851.04
+Fintech,Transfers,Fraud Shield,AWS S3,15/06/2025,502.4,547.53,412.79
+Fintech,Bank account,CrossBorder Expansion,GCP Cloud Storage,15/06/2025,2118.17,2291.23,1711.85
+Fintech,Transfers,Search Relevance,GCP BigQuery,15/06/2025,609.48,663.69,498.28
+Fintech,Deposits,Pocket Growth,GCP Cloud Storage,15/06/2025,838.23,920.54,645.58
+Retail,Promotion,Seller Onboarding 2.0,GCP Cloud Storage,16/06/2025,332.59,364.71,250.85
+Retail,Advertisement,Logistics Optimization,AWS EC2,16/06/2025,2525.61,2745.5,1925.7
+Retail,Delivery,Pocket Growth,AWS Redshift,16/06/2025,472.12,525.46,394.05
+Fintech,Bank account,CrossBorder Expansion,Azure Data Lake,16/06/2025,473.12,528.49,365.41
+Fintech,Bank account,CrossBorder Expansion,Azure Data Lake,16/06/2025,385.45,419.39,321.93
+Fintech,Pocket,Ad Targeting,AWS S3,16/06/2025,563.32,629.33,427.37
+Fintech,Deposits,Logistics Optimization,AWS Redshift,17/06/2025,830.85,897.91,663.19
+Fintech,Bank account,CrossBorder Expansion,GCP Cloud Run,17/06/2025,160.17,178.91,130.76
+Retail,Platform,Fraud Shield,AWS S3,17/06/2025,438.87,490.69,366.15
+Fintech,Pocket,Lending Scoring,AWS S3,17/06/2025,910.19,983.44,772.59
+Fintech,Pocket,CrossBorder Expansion,GCP BigQuery,18/06/2025,1312.02,1457.03,1082.69
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,18/06/2025,732.07,819.05,555.35
+Retail,Advertisement,Logistics Optimization,AWS EC2,18/06/2025,1285.38,1434.79,990.1
+Fintech,Pocket,CrossBorder Expansion,AWS S3,18/06/2025,2085.35,2333.15,1570.31
+Retail,Delivery,CrossBorder Expansion,Kubernetes (GKE),19/06/2025,182.14,200.73,152.99
+Retail,Services,Seller Onboarding 2.0,AWS Lambda,19/06/2025,1028.65,1114.16,813.44
+Fintech,Bank account,CrossBorder Expansion,AWS S3,19/06/2025,1696.4,1889.78,1398.32
+Fintech,Lending,Fraud Shield,AWS Redshift,19/06/2025,1964.03,2169.38,1562.79
+Retail,Services,Seller Onboarding 2.0,GCP BigQuery,19/06/2025,620.26,685.13,507.34
+Fintech,Lending,Shipping Automation,AWS Lambda,19/06/2025,1941.46,2129.18,1595.2
+Fintech,Bank account,Lending Scoring,AWS EC2,20/06/2025,854.45,942.35,677.25
+Retail,Platform,Search Relevance,AWS S3,20/06/2025,1136.07,1233.93,944.83
+Fintech,Bank account,Shipping Automation,GCP Cloud Run,20/06/2025,1330.9,1476.75,1068.83
+Fintech,Pocket,Lending Scoring,AWS S3,20/06/2025,551.25,597.01,432.69
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,20/06/2025,703.3,780.1,588.79
+Retail,Promotion,Search Relevance,GCP Cloud Storage,20/06/2025,1552.39,1729.3,1175.07
+Retail,Advertisement,Shipping Automation,GCP BigQuery,20/06/2025,1909.1,2097.9,1526.18
+Retail,Services,Search Relevance,AWS Lambda,21/06/2025,206.91,227.68,158.92
+Fintech,Deposits,Search Relevance,Databricks,21/06/2025,506.33,553.16,397.27
+Retail,Promotion,Search Relevance,AWS Redshift,21/06/2025,2505.98,2803.64,1952.16
+Fintech,Lending,CrossBorder Expansion,AWS S3,21/06/2025,1837.57,2038.46,1430.34
+Fintech,Transfers,Fraud Shield,GCP BigQuery,21/06/2025,2420.69,2650.07,1845.75
+Fintech,Deposits,Logistics Optimization,AWS Redshift,22/06/2025,875.33,951.48,690.32
+Fintech,Lending,Fraud Shield,AWS Lambda,22/06/2025,240.63,262.0,197.84
+Retail,Advertisement,Shipping Automation,AWS EC2,22/06/2025,294.51,323.54,247.4
+Retail,Delivery,Checkout Revamp,Kubernetes (GKE),22/06/2025,1558.07,1741.46,1229.9
+Fintech,Deposits,CrossBorder Expansion,AWS EC2,22/06/2025,1677.47,1860.93,1414.72
+Retail,Services,Lending Scoring,GCP Cloud Storage,22/06/2025,1939.19,2111.02,1601.52
+Retail,Promotion,Shipping Automation,AWS Redshift,22/06/2025,1128.12,1257.15,952.05
+Fintech,Pocket,Ad Targeting,GCP Cloud Run,23/06/2025,2165.14,2371.11,1721.53
+Retail,Services,Seller Onboarding 2.0,GCP BigQuery,23/06/2025,558.23,621.9,465.54
+Fintech,Transfers,Seller Onboarding 2.0,AWS Redshift,23/06/2025,329.0,358.5,259.57
+Fintech,Bank account,Seller Onboarding 2.0,AWS EC2,23/06/2025,119.58,132.11,92.19
+Retail,Promotion,CrossBorder Expansion,AWS Redshift,23/06/2025,2241.24,2503.61,1720.85
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,24/06/2025,306.81,334.52,251.29
+Fintech,Pocket,Ad Targeting,GCP BigQuery,24/06/2025,1375.01,1523.12,1093.28
+Fintech,Deposits,Logistics Optimization,AWS EC2,24/06/2025,923.0,1033.29,732.59
+Fintech,Deposits,CrossBorder Expansion,GCP Cloud Storage,24/06/2025,9635.46,10464.34,7734.49
+Fintech,Pocket,CrossBorder Expansion,AWS S3,24/06/2025,1554.77,1684.65,1219.7
+Retail,Advertisement,Seller Onboarding 2.0,AWS EC2,24/06/2025,143.46,158.8,118.93
+Retail,Promotion,Shipping Automation,GCP Cloud Storage,25/06/2025,1150.65,1258.34,865.38
+Fintech,Pocket,Lending Scoring,GCP BigQuery,25/06/2025,797.65,863.74,670.18
+Fintech,Lending,Shipping Automation,AWS Redshift,25/06/2025,1949.68,2142.72,1495.56
+Retail,Promotion,Lending Scoring,AWS S3,25/06/2025,774.64,859.96,612.42
+Fintech,Pocket,Fraud Shield,AWS Lambda,25/06/2025,256.8,280.28,211.99
+Retail,Services,Fraud Shield,AWS S3,25/06/2025,392.58,429.25,304.42
+Fintech,Bank account,Seller Onboarding 2.0,Azure Data Lake,25/06/2025,1373.42,1529.76,1155.81
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,26/06/2025,2167.86,2386.39,1674.8
+Retail,Delivery,Seller Onboarding 2.0,AWS EC2,26/06/2025,121.99,135.86,96.5
+Retail,Platform,Fraud Shield,AWS Lambda,26/06/2025,263.58,289.37,221.12
+Fintech,Lending,CrossBorder Expansion,AWS S3,26/06/2025,2154.74,2409.25,1814.4
+Fintech,Deposits,Fraud Shield,Databricks,26/06/2025,1430.45,1582.12,1108.48
+Retail,Promotion,Search Relevance,GCP Cloud Storage,27/06/2025,1561.07,1693.2,1281.18
+Fintech,Pocket,Fraud Shield,GCP BigQuery,27/06/2025,1571.52,1752.88,1196.04
+Fintech,Transfers,Search Relevance,GCP Cloud Run,27/06/2025,666.24,732.58,515.53
+Retail,Delivery,Pocket Growth,AWS EC2,27/06/2025,10339.91,11225.68,8067.0
+Retail,Delivery,Search Relevance,AWS Redshift,27/06/2025,1732.92,1882.13,1424.7
+Fintech,Deposits,Pocket Growth,Kubernetes (GKE),27/06/2025,2697.74,2987.75,2101.82
+Fintech,Lending,Fraud Shield,AWS S3,27/06/2025,436.25,471.97,329.45
+Retail,Promotion,CrossBorder Expansion,AWS S3,28/06/2025,1932.32,2109.06,1624.78
+Retail,Platform,Search Relevance,AWS S3,28/06/2025,1002.1,1087.87,819.1
+Fintech,Bank account,Lending Scoring,AWS S3,28/06/2025,643.48,706.31,531.86
+Fintech,Deposits,Search Relevance,Kubernetes (GKE),28/06/2025,1322.57,1450.3,1072.18
+Retail,Delivery,Seller Onboarding 2.0,Kubernetes (GKE),28/06/2025,939.72,1034.51,729.0
+Retail,Services,Checkout Revamp,GCP Cloud Storage,28/06/2025,397.38,433.61,318.92
+Fintech,Transfers,Seller Onboarding 2.0,GCP Cloud Run,28/06/2025,489.41,529.19,388.07
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,29/06/2025,2290.6,2530.14,1875.05
+Retail,Promotion,CrossBorder Expansion,AWS Redshift,29/06/2025,1552.7,1700.12,1297.86
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,29/06/2025,638.3,705.99,525.52
+Fintech,Transfers,Fraud Shield,AWS Redshift,29/06/2025,2396.57,2598.71,1831.05
+Fintech,Pocket,Ad Targeting,Azure Data Lake,29/06/2025,188.55,203.74,148.91
+Fintech,Pocket,CrossBorder Expansion,AWS Lambda,29/06/2025,2166.62,2361.47,1759.73
+Retail,Delivery,Search Relevance,AWS Redshift,30/06/2025,1904.52,2091.66,1468.4
+Retail,Services,Search Relevance,GCP Cloud Storage,30/06/2025,1469.28,1609.98,1239.41
+Fintech,Bank account,CrossBorder Expansion,AWS S3,30/06/2025,1956.68,2176.64,1613.5
+Fintech,Deposits,Logistics Optimization,AWS Lambda,30/06/2025,523.31,573.08,432.77
+Retail,Delivery,Checkout Revamp,AWS Redshift,30/06/2025,1528.87,1683.62,1148.89
+Retail,Platform,Pocket Growth,AWS S3,30/06/2025,1573.78,1737.05,1226.59
+Retail,Promotion,Lending Scoring,GCP Cloud Storage,30/06/2025,947.26,1023.87,746.65
+Retail,Advertisement,Logistics Optimization,Databricks,30/06/2025,322.15,354.56,273.67
+Fintech,Transfers,Fraud Shield,AWS Redshift,30/06/2025,2314.63,2531.73,1924.78
+Retail,Advertisement,Pocket Growth,GCP BigQuery,30/06/2025,659.13,722.97,518.37
+Retail,Advertisement,Pocket Growth,AWS EC2,30/06/2025,1886.17,2044.63,1531.62
+Retail,Delivery,CrossBorder Expansion,AWS Redshift,30/06/2025,2339.71,2600.15,1772.5
+Fintech,Lending,CrossBorder Expansion,AWS Lambda,30/06/2025,2444.18,2731.85,1890.64
+Fintech,Pocket,Lending Scoring,AWS Lambda,30/06/2025,2878.13,3110.95,2317.65
+Fintech,Bank account,Lending Scoring,AWS EC2,30/06/2025,814.8,899.59,631.51
+Fintech,Transfers,Seller Onboarding 2.0,GCP BigQuery,30/06/2025,473.7,526.07,356.44
+Fintech,Lending,CrossBorder Expansion,AWS S3,30/06/2025,1649.62,1800.38,1326.13
+Fintech,Pocket,Lending Scoring,GCP BigQuery,30/06/2025,775.47,861.94,609.32
+Fintech,Transfers,Fraud Shield,GCP Cloud Run,30/06/2025,789.63,872.77,598.64
+Fintech,Bank account,Pocket Growth,Azure Data Lake,30/06/2025,1340.9,1498.01,1106.42
+Retail,Services,Search Relevance,AWS Lambda,30/06/2025,218.09,244.1,166.04
+Fintech,Transfers,Search Relevance,GCP BigQuery,30/06/2025,756.43,818.23,635.59
+Fintech,Pocket,Ad Targeting,GCP BigQuery,30/06/2025,189.76,208.32,148.99
