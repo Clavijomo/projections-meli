@@ -9,32 +9,68 @@ import {
   Legend,
   Brush,
 } from 'recharts';
-import { useCsvData } from '../hooks/useCsvData';
 import { parse } from 'date-fns';
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import type { ProjectionData, ChartData, CsvData } from '@/types/data';
 
 type ChartViewProps = {
   startDate?: Date;
   endDate?: Date;
+  projectionData: CsvData[];
 }
 
-export const ChartView = ({ startDate, endDate }: ChartViewProps) => {
-  const { data, loading } = useCsvData('/data/proyecciones.csv');
+export const ChartView = ({ startDate, endDate, projectionData }: ChartViewProps) => {
+  const [debouncedDates, setDebouncedDates] = useState({ startDate, endDate });
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedDates({ startDate, endDate });
+    }, 300);
+    
+    return () => clearTimeout(timer);
+  }, [startDate, endDate]);
 
   useEffect(() => {
-    if (!loading && data.length > 0) {
-      console.log('Columnas disponibles:', Object.keys(data[0]));
+    if (projectionData.length > 0) {
+      console.log('Columnas disponibles:', Object.keys(projectionData[0]));
     }
-  }, [loading, data]);
+  }, [projectionData]);
 
-  const aggregatedData = useMemo(() => {
-    const grouped: Record<string, any> = {};
+  const limitedData = useMemo(() => {
+    if (!projectionData || projectionData.length === 0) return [];
+    
+    const maxRecords = 500;
+    if (projectionData.length <= maxRecords) {
+      return projectionData;
+    }
+    
+    const step = Math.ceil(projectionData.length / maxRecords);
+    const sampled = [];
+    for (let i = 0; i < projectionData.length; i += step) {
+      sampled.push(projectionData[i]);
+    }
+    return sampled;
+  }, [projectionData]);
+  
+  const aggregatedData = useMemo(() => {    
+    if (!limitedData || limitedData.length === 0) {
+      return [];
+    }
 
-    data.forEach((row) => {
-      const d = parse(row.date, 'dd/MM/yyyy', new Date());
+    const grouped: Record<string, ChartData> = {};
 
-      if (isNaN(d.getTime())) {
-        console.warn('Fecha invalida:', row.date)
+    limitedData.forEach((row) => {  
+      if (!('proyected_spend' in row)) return;
+      
+      const projectionRow = row as ProjectionData;
+      
+      let d: Date;
+      try {
+        d = parse(projectionRow.date, 'dd/MM/yyyy', new Date());
+        if (isNaN(d.getTime())) {
+          return;
+        }
+      } catch (error) {
         return;
       }
 
@@ -49,23 +85,24 @@ export const ChartView = ({ startDate, endDate }: ChartViewProps) => {
         };
       }
 
-      grouped[monthKey].proyected_spend += row.proyected_spend || 0;
-      grouped[monthKey].max_spend += row.max_spend || 0;
-      grouped[monthKey].min_spend += row.min_spend || 0;
+      grouped[monthKey].proyected_spend += projectionRow.proyected_spend || 0;
+      grouped[monthKey].max_spend += projectionRow.max_spend || 0;
+      grouped[monthKey].min_spend += projectionRow.min_spend || 0;
     });
 
-    let result = Object.values(grouped).sort((a, b) => a.date - b.date);
+    let result = Object.values(grouped).sort((a, b) => a.date.getTime() - b.date.getTime());
 
-    if (startDate) {
-      result = result.filter((item) => item.date >= startDate)
+    if (debouncedDates.startDate) {
+      result = result.filter((item) => item.date >= debouncedDates.startDate!);
     }
 
-    if (endDate) {
-      result = result.filter((item) => item.date <= endDate)
+    if (debouncedDates.endDate) {
+      result = result.filter((item) => item.date <= debouncedDates.endDate!);
     }
+
+    console.log('ChartView aggregatedData result length:', result.length);
     return result;
-  }, [data, startDate, endDate]);
-
+  }, [limitedData, debouncedDates.startDate, debouncedDates.endDate]);
 
   return (
     <div className="w-full overflow-x-auto mt-10">
@@ -119,14 +156,14 @@ export const ChartView = ({ startDate, endDate }: ChartViewProps) => {
             <Line type="linear" dataKey="proyected_spend" stroke="#82ca9d" dot={{ r: 4 }} />
             <Line type="linear" dataKey="max_spend" stroke="#8884d8" dot={{ r: 4 }} />
             <Line type="linear" dataKey="min_spend" stroke="#ff7300" dot={{ r: 4 }} />
+            
+            <Brush 
+              dataKey={'date'}
+              height={30}
+              stroke='#8884d8'
+              travellerWidth={10}
+            />
           </LineChart>
-
-          <Brush 
-            dataKey={'date'}
-            height={30}
-            stroke='#8884d8'
-            travellerWidth={10}
-          />
         </ResponsiveContainer>
       </div>
     </div>

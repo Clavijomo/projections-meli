@@ -1,86 +1,77 @@
-import { useMemo, useState } from "react";
-import { useCsvData } from "./hooks/useCsvData"
-import {
-  useReactTable,
-  getCoreRowModel,
-  flexRender
-} from '@tanstack/react-table'
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCsvData } from "./hooks/useCsvData";
+import { useProjectionDateRange } from "./hooks/useDateRange";
 
-import type { ColumnDef } from "@tanstack/react-table";
-import { ChartView } from "./components/ChartView";
+import type { HistoricalData } from "@/types/data";
+import { AdvancedChartView } from "./components/AdvancedChartView";
 import { DateFilter } from "./components/DateFilter";
+import { ErrorBoundary } from "./components/ErrorBoundary";
+import { AdvancedMuiTable } from "./components/AdvancedMuiTable";
 
 function App() {
   const { data, loading } = useCsvData('/data/historico.csv');
+  const { data: projectionData, loading: projectionLoading } = useCsvData('/data/proyecciones.csv');
   const [startDate, setstartDate] = useState<Date | undefined>(undefined);
   const [endDate, setendDate] = useState<Date | undefined>(undefined);
 
-  const columns = useMemo<ColumnDef<any>[]>(
-    () =>
-      data.length
-        ? Object.keys(data[0]).map((key) => ({
-          accessorKey: key,
-          header: key.toUpperCase()
-        }))
-        : [],
+  const handleStartDateChange = useCallback((date: Date | undefined) => {
+    setstartDate(date);
+  }, []);
+
+  const handleEndDateChange = useCallback((date: Date | undefined) => {
+    setendDate(date);
+  }, []);
+
+  const projectionDateRange = useProjectionDateRange(projectionData);
+
+
+  useEffect(() => {
+    console.log('Date filter changed:', { startDate, endDate })
+  }, [startDate, endDate])
+
+  const tableData = useMemo(() =>
+    data.slice(0, 10) as HistoricalData[],
     [data]
   );
 
-  const table = useReactTable({
-    data: data.slice(0, 20),
-    columns,
-    getCoreRowModel: getCoreRowModel()
-  })
-
-  if (loading) return <p>Cargando...</p>
+  if (loading || projectionLoading) return <p>Cargando...</p>
   if (!data.length) return <p>No hay datos...</p>
 
   return (
-    <div className="h-screen bg-zinc-800 text-white">
+    <div className="h-screen h-full overflow-y-auto bg-zinc-800 text-white py-10">
       <div className="w-3/4 mx-auto">
         <h1>Datos históricos</h1>
-        <table className="border w-full">
-          <thead className="border border-zinc-400 font-semibold text-left">
-            {table.getHeaderGroups().map((headerGroup) => (
-              <tr key={headerGroup.id}>
-                {headerGroup.headers.map((header) => (
-                  <th key={header.id} className="p-2 border border-zinc-500 lowercase font-semibold">
-                    {header.isPlaceholder
-                      ? null
-                      : flexRender(header.column.columnDef.header, header.getContext())
-                    }
-                  </th>
-                ))}
-              </tr>
-            ))}
-          </thead>
-          <tbody>
-            {table.getRowModel().rows.map((row) => (              
-              <tr key={row.id}>
-                {row.getVisibleCells().map((cell) => (
-                  <td className="border border-zinc-500 p-2 text-sm" key={cell.id}>
-                    {flexRender(
-                      cell.column.columnDef.cell ?? cell.getValue,
-                      cell.getContext()
-                    )}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        <DateFilter 
-          date={startDate}
-          setDate={setstartDate}
-          label="Fecha inicial"
-        />
+        <AdvancedMuiTable data={tableData} title="Análisis de Datos Históricos MELI" />
 
-        <DateFilter 
-          date={endDate}
-          setDate={setendDate}
-          label="Fecha final"
-        />
-        <ChartView startDate={startDate} endDate={endDate} />
+        <div className="grid grid-cols-2 items-center gap-5">
+          <ErrorBoundary>
+            <DateFilter
+              date={startDate}
+              setDate={handleStartDateChange}
+              label="Fecha inicial"
+              minDate={projectionDateRange.minDate}
+              maxDate={projectionDateRange.maxDate}
+            />
+          </ErrorBoundary>
+
+          <ErrorBoundary>
+            <DateFilter
+              date={endDate}
+              setDate={handleEndDateChange}
+              label="Fecha final"
+              minDate={projectionDateRange.minDate}
+              maxDate={projectionDateRange.maxDate}
+            />
+          </ErrorBoundary>
+
+        </div>
+        <ErrorBoundary>
+          <AdvancedChartView
+            startDate={startDate}
+            endDate={endDate}
+            projectionData={projectionData}
+          />
+        </ErrorBoundary>
       </div>
     </div>
   )
