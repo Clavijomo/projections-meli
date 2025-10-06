@@ -67,9 +67,26 @@ export const ChartRenderer = ({
   onMouseMove,
   onMouseUp,
 }: ChartRendererProps) => {
+
+  // Clean data to ensure no NaN values reach the charts
+  const cleanedData = aggregatedData.map(item => ({
+    ...item,
+    date: item.date.getTime(), // Convert to timestamp for charts
+    proyected_spend: Number(item.proyected_spend) || 0,
+    max_spend: Number(item.max_spend) || 0,
+    min_spend: Number(item.min_spend) || 0,
+    avg_spend: Number(item.avg_spend) || 0,
+    variance: Number(item.variance) || 0,
+    count: Number(item.count) || 0,
+  })).filter(item => 
+    !isNaN(item.date) && 
+    !isNaN(item.proyected_spend) && 
+    !isNaN(item.max_spend) && 
+    !isNaN(item.min_spend)
+  );
   
   const commonProps = {
-    data: aggregatedData,
+    data: cleanedData,
     onMouseDown,
     onMouseMove,
     onMouseUp,
@@ -80,7 +97,10 @@ export const ChartRenderer = ({
     type: "number" as const,
     scale: "time" as const,
     domain: zoomDomain.left && zoomDomain.right ? [zoomDomain.left, zoomDomain.right] : ['dataMin', 'dataMax'] as const,
-    tickFormatter: (date: number) => format(new Date(date), 'MMM yyyy', { locale: es }),
+    tickFormatter: (timestamp: number) => {
+      if (isNaN(timestamp)) return '';
+      return format(new Date(timestamp), 'MMM yyyy', { locale: es });
+    },
     stroke: '#9ca3af',
   };
 
@@ -89,13 +109,19 @@ export const ChartRenderer = ({
   };
 
   const commonTooltipProps = {
-    labelFormatter: (date: number) => format(new Date(date), 'MMMM yyyy', { locale: es }),
-    formatter: (value: number, name: string) => [
-      `${value.toLocaleString('es-CO')} USD`,
-      name === 'proyected_spend' ? 'Proyectado' : 
-      name === 'max_spend' ? 'Máximo' : 
-      name === 'min_spend' ? 'Mínimo' : 'Varianza'
-    ],
+    labelFormatter: (timestamp: number) => {
+      if (isNaN(timestamp)) return 'Fecha inválida';
+      return format(new Date(timestamp), 'MMMM yyyy', { locale: es });
+    },
+    formatter: (value: number, name: string) => {
+      if (isNaN(value)) return ['0 USD', name];
+      return [
+        `${value.toLocaleString('es-CO')} USD`,
+        name === 'proyected_spend' ? 'Proyectado' : 
+        name === 'max_spend' ? 'Máximo' : 
+        name === 'min_spend' ? 'Mínimo' : 'Varianza'
+      ];
+    },
     contentStyle: {
       backgroundColor: '#1f2937',
       border: '1px solid #4b5563',

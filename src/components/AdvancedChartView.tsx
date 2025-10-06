@@ -37,7 +37,9 @@ export const AdvancedChartView = ({ startDate, endDate, projectionData }: Advanc
   }, [startDate, endDate]);
 
   const limitedData = useMemo(() => {
-    if (!projectionData || projectionData.length === 0) return [];
+    if (!projectionData || projectionData.length === 0) {
+      return [];
+    }
     
     const maxRecords = 500;
     if (projectionData.length <= maxRecords) {
@@ -63,15 +65,19 @@ export const AdvancedChartView = ({ startDate, endDate, projectionData }: Advanc
       variance: number;
     }> = {};
 
-    limitedData.forEach((row) => {  
-      if (!('proyected_spend' in row)) return;
+    limitedData.forEach((row) => {
+      if (!('proyected_spend' in row)) {
+        return;
+      }
       
       const projectionRow = row as ProjectionData;
       
       let d: Date;
       try {
         d = parse(projectionRow.date, 'dd/MM/yyyy', new Date());
-        if (isNaN(d.getTime())) return;
+        if (isNaN(d.getTime())) {
+          return;
+        }
       } catch (error) {
         return;
       }
@@ -90,15 +96,31 @@ export const AdvancedChartView = ({ startDate, endDate, projectionData }: Advanc
         };
       }
 
-      grouped[monthKey].proyected_spend += projectionRow.proyected_spend || 0;
-      grouped[monthKey].max_spend += projectionRow.max_spend || 0;
-      grouped[monthKey].min_spend += projectionRow.min_spend || 0;
+      // Ensure all values are valid numbers
+      const proyectedSpend = Number(projectionRow.proyected_spend) || 0;
+      const maxSpend = Number(projectionRow.max_spend) || 0;
+      const minSpend = Number(projectionRow.min_spend) || 0;
+      
+      if (isNaN(proyectedSpend) || isNaN(maxSpend) || isNaN(minSpend)) {
+        return;
+      }
+      
+      grouped[monthKey].proyected_spend += proyectedSpend;
+      grouped[monthKey].max_spend += maxSpend;
+      grouped[monthKey].min_spend += minSpend;
       grouped[monthKey].count += 1;
     });
 
     Object.values(grouped).forEach(item => {
-      item.avg_spend = item.proyected_spend / item.count;
+      item.avg_spend = item.count > 0 ? item.proyected_spend / item.count : 0;
       item.variance = Math.abs(item.max_spend - item.min_spend);
+      
+      // Ensure all final values are valid numbers
+      if (isNaN(item.proyected_spend)) item.proyected_spend = 0;
+      if (isNaN(item.max_spend)) item.max_spend = 0;
+      if (isNaN(item.min_spend)) item.min_spend = 0;
+      if (isNaN(item.avg_spend)) item.avg_spend = 0;
+      if (isNaN(item.variance)) item.variance = 0;
     });
 
     let result = Object.values(grouped).sort((a, b) => a.date.getTime() - b.date.getTime());
@@ -186,9 +208,27 @@ export const AdvancedChartView = ({ startDate, endDate, projectionData }: Advanc
   const handleGridToggle = useCallback(() => setShowGrid(!showGrid), [showGrid]);
   const handleZoomReset = useCallback(() => setZoomDomain({}), []);
 
+  // Show loading if no data
+  if (!projectionData || projectionData.length === 0) {
+    return (
+      <div className="w-full mt-10 text-center py-20">
+        <p className="text-gray-400">Cargando datos de proyección...</p>
+      </div>
+    );
+  }
+
+  // Show message if no aggregated data
+  if (aggregatedData.length === 0) {
+    return (
+      <div className="w-full mt-10 text-center py-20">
+        <p className="text-gray-400">No hay datos para mostrar en el rango seleccionado.</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="w-full mt-10">
-      <ChartControls
+        <div className="w-full mt-10">
+          <ChartControls
         chartType={chartType}
         selectedLines={selectedLines}
         showAnimations={showAnimations}
