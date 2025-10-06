@@ -1,47 +1,42 @@
 import type { HistoricalData } from '@/types/data';
 import {
-    Add as AddIcon,
-    Edit as EditIcon,
-    GetApp as ExportIcon,
-    Search as SearchIcon,
-    Star as StarIcon,
-    TrendingDown as TrendingDownIcon,
-    TrendingUp as TrendingUpIcon,
-    Visibility as ViewIcon
+  Search as SearchIcon,
+  TrendingDown as TrendingDownIcon,
+  TrendingUp as TrendingUpIcon,
+  Visibility as ViewIcon
 } from '@mui/icons-material';
 import {
-    Alert,
-    Avatar,
-    Box,
-    Button,
-    Chip,
-    Collapse,
-    Dialog,
-    DialogActions,
-    DialogContent,
-    DialogTitle,
-    Fab,
-    FormControl,
-    FormControlLabel,
-    IconButton,
-    InputAdornment,
-    InputLabel,
-    LinearProgress,
-    MenuItem,
-    Paper,
-    Rating,
-    Select,
-    Switch,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableHead,
-    TablePagination,
-    TableRow,
-    TextField,
-    Tooltip,
-    Typography,
+  Alert,
+  Avatar,
+  Box,
+  Button,
+  Chip,
+  Collapse,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  FormControl,
+  FormControlLabel,
+  IconButton,
+  InputAdornment,
+  InputLabel,
+  LinearProgress,
+  MenuItem,
+  Paper,
+  Rating,
+  Select,
+  Switch,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TableRow,
+  TextField,
+  Tooltip,
+  Typography
 } from '@mui/material';
 import { useCallback, useMemo, useState } from 'react';
 
@@ -67,12 +62,7 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
   const [filterStatus, setFilterStatus] = useState<string>('all');
   const [sortField, setSortField] = useState<keyof ExtendedHistoricalData>('date');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc');
-  const [selectedRows, setSelectedRows] = useState<Set<string>>(new Set());
-  const [showFilters, setShowFilters] = useState(false);
-  const [editDialog, setEditDialog] = useState<{ open: boolean; row: ExtendedHistoricalData | null }>({
-    open: false,
-    row: null
-  });
+  const [showFilters, setShowFilters] = useState(false);  
   const [viewDialog, setViewDialog] = useState<{ open: boolean; row: ExtendedHistoricalData | null }>({
     open: false,
     row: null
@@ -113,9 +103,9 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
     return [...filteredData].sort((a, b) => {
       const aValue = a[sortField];
       const bValue = b[sortField];
-      
+
       if (aValue === bValue) return 0;
-      
+
       const comparison = aValue && bValue && aValue > bValue ? 1 : -1;
       return sortDirection === 'asc' ? comparison : -comparison;
     });
@@ -144,41 +134,9 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
     }
   }, [sortField, sortDirection]);
 
-  const handleRowSelect = useCallback((id: string) => {
-    const newSelected = new Set(selectedRows);
-    if (newSelected.has(id)) {
-      newSelected.delete(id);
-    } else {
-      newSelected.add(id);
-    }
-    setSelectedRows(newSelected);
-  }, [selectedRows]);
-
-  const handleToggleFavorite = useCallback((id: string) => {
-    console.log('Toggle favorite for:', id);
-  }, []);
-
-  const handleEdit = useCallback((row: ExtendedHistoricalData) => {
-    setEditDialog({ open: true, row });
-  }, []);
-
   const handleView = useCallback((row: ExtendedHistoricalData) => {
     setViewDialog({ open: true, row });
-  }, []);
-
-  const handleExport = useCallback(() => {
-    const csvContent = [
-      Object.keys(filteredData[0] || {}).join(','),
-      ...filteredData.map(row => Object.values(row).join(','))
-    ].join('\n');
-    
-    const blob = new Blob([csvContent], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${title.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.csv`;
-    a.click();
-  }, [filteredData, title]);
+  }, []);  
 
   const StatusChip = ({ status }: { status: string }) => {
     const colors = {
@@ -186,6 +144,7 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
       inactive: 'error' as const,
       pending: 'warning' as const
     };
+
     return <Chip label={status} color={colors[status as keyof typeof colors]} size="small" />;
   };
 
@@ -201,35 +160,22 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
   return (
     <Box sx={{ width: '100%', mb: 4 }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-        <Typography variant="h5" component="h2" sx={{ color: 'white', fontWeight: 'bold' }}>
+        <Typography variant="h4" align='center' component="h2" sx={{ color: 'white', fontWeight: 'semibold', width: '100%' }}>
           {title}
-        </Typography>
-        <Box sx={{ display: 'flex', gap: 1 }}>
-          <Tooltip title="Exportar datos">
-            <IconButton onClick={handleExport} sx={{ color: 'white' }}>
-              <ExportIcon />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title="Agregar nuevo">
-            <Fab size="small" color="primary">
-              <AddIcon />
-            </Fab>
-          </Tooltip>
-        </Box>
+        </Typography>        
       </Box>
 
-      <Paper sx={{ p: 2, mb: 2, backgroundColor: 'rgba(255,255,255,0.05)' }}>
+      <div className='bg-zinc-600 p-4 mb-5 rounded-2xl text-white'>
         <Box sx={{ display: 'flex', gap: 2, alignItems: 'center', flexWrap: 'wrap' }}>
           <TextField
-            placeholder="Buscar en todos los campos..."
+            placeholder="Buscar..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             size="small"
-            sx={{ minWidth: 250 }}
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <SearchIcon />
+                  <SearchIcon fontSize='small' />
                 </InputAdornment>
               ),
             }}
@@ -260,17 +206,17 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
             label="Filtros avanzados"
           />
 
-          <Chip 
-            label={`${filteredData.length} registros`} 
-            color="info" 
-            variant="outlined" 
+          <Chip
+            label={`${filteredData.length} registros`}
+            color="info"
+            variant="outlined"
           />
         </Box>
 
         <Collapse in={showFilters}>
           <Box sx={{ mt: 2, pt: 2, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
             <Typography variant="subtitle2" sx={{ mb: 1 }}>
-              Filtros Avanzados:
+              Filtros avanzados:
             </Typography>
             <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
               <FormControl size="small" sx={{ minWidth: 120 }}>
@@ -298,15 +244,12 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
             </Box>
           </Box>
         </Collapse>
-      </Paper>
+      </div>
 
       <TableContainer component={Paper} sx={{ backgroundColor: 'rgba(255,255,255,0.05)' }}>
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-              <TableCell padding="checkbox">
-                <Switch size="small" />
-              </TableCell>
               <TableCell onClick={() => handleSort('vertical')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
                 Vertical {sortField === 'vertical' && (sortDirection === 'asc' ? '↑' : '↓')}
               </TableCell>
@@ -328,31 +271,26 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
           </TableHead>
           <TableBody>
             {paginatedData.map((row) => (
-              <TableRow 
-                key={row.id} 
+              <TableRow
+                key={row.id}
                 hover
-                selected={selectedRows.has(row.id!)}
-                sx={{ '&:hover': { backgroundColor: 'rgba(255,255,255,0.08)' } }}
+                sx={{
+                  '&:hover':
+                    { backgroundColor: 'rgba(255, 255, 255, 0.08)', color: '#fff' }
+                }}
               >
-                <TableCell padding="checkbox">
-                  <Switch
-                    size="small"
-                    checked={selectedRows.has(row.id!)}
-                    onChange={() => handleRowSelect(row.id!)}
-                  />
-                </TableCell>
                 <TableCell>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, color: '#ededed' }}>
                     <Avatar sx={{ width: 24, height: 24, fontSize: '0.75rem' }}>
                       {row.vertical?.charAt(0)}
                     </Avatar>
                     {row.vertical}
                   </Box>
                 </TableCell>
-                <TableCell>{row.area}</TableCell>
-                <TableCell>{row.date}</TableCell>
+                <TableCell sx={{ color: '#ededed' }}>{row.area}</TableCell>
+                <TableCell sx={{ color: '#ededed' }}>{row.date}</TableCell>
                 <TableCell>
-                  <Typography variant="body2" sx={{ fontWeight: 'bold', color: 'success.main' }}>
+                  <Typography variant="body2" sx={{ color: 'success.main' }}>
                     ${row.spend?.toLocaleString('es-CO')}
                   </Typography>
                 </TableCell>
@@ -366,11 +304,11 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
                   <Rating value={row.rating} size="small" readOnly />
                 </TableCell>
                 <TableCell>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <LinearProgress 
-                      variant="determinate" 
-                      value={row.progress} 
-                      sx={{ width: 60, height: 6 }}
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, color: '#fff' }}>
+                    <LinearProgress
+                      variant="determinate"
+                      value={row.progress}
+                      sx={{ width: 60, height: 6, borderRadius: '200px'  }}
                     />
                     <Typography variant="caption">{row.progress}%</Typography>
                   </Box>
@@ -379,21 +317,7 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
                   <Box sx={{ display: 'flex', gap: 0.5 }}>
                     <Tooltip title="Ver detalles">
                       <IconButton size="small" onClick={() => handleView(row)}>
-                        <ViewIcon fontSize="small" />
-                      </IconButton>
-                    </Tooltip>
-                    <Tooltip title="Editar">
-                      <IconButton size="small" onClick={() => handleEdit(row)}>
-                        <EditIcon fontSize="small" />
-                      </IconButton>
-                    </Tooltip>
-                    <Tooltip title="Favorito">
-                      <IconButton 
-                        size="small" 
-                        onClick={() => handleToggleFavorite(row.id!)}
-                        color={row.favorite ? 'warning' : 'default'}
-                      >
-                        <StarIcon fontSize="small" />
+                        <ViewIcon color='info' fontSize="small" />
                       </IconButton>
                     </Tooltip>
                   </Box>
@@ -438,28 +362,7 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
         <DialogActions>
           <Button onClick={() => setViewDialog({ open: false, row: null })}>Cerrar</Button>
         </DialogActions>
-      </Dialog>
-
-      <Dialog open={editDialog.open} onClose={() => setEditDialog({ open: false, row: null })} maxWidth="sm" fullWidth>
-        <DialogTitle>Editar Registro</DialogTitle>
-        <DialogContent>
-          <Alert severity="info" sx={{ mb: 2 }}>
-            Esta es una demostración.
-          </Alert>
-          {editDialog.row && (
-            <TextField
-              fullWidth
-              label="Vertical"
-              defaultValue={editDialog.row.vertical}
-              margin="normal"
-            />
-          )}
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setEditDialog({ open: false, row: null })}>Cancelar</Button>
-          <Button variant="contained">Guardar</Button>
-        </DialogActions>
-      </Dialog>
+      </Dialog>      
     </Box>
   );
 };

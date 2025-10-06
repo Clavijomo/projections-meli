@@ -26,3 +26,6 @@ export interface ChartData {
 }
 
 export type CsvData = HistoricalData | ProjectionData;
+
+export type ChartType = 'line' | 'area' | 'bar' | 'composed' | 'pie';
+

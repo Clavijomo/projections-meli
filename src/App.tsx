@@ -1,23 +1,21 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useCsvData } from "./hooks/useCsvData";
 import { useProjectionDateRange } from "./hooks/useDateRange";
 
 import type { HistoricalData } from "@/types/data";
 import { AdvancedChartView } from "./components/AdvancedChartView";
+import { AdvancedMuiTable } from "./components/AdvancedMuiTable";
 import { DateFilter } from "./components/DateFilter";
 import { ErrorBoundary } from "./components/ErrorBoundary";
-import { AdvancedMuiTable } from "./components/AdvancedMuiTable";
-import { GoogleGenAI } from "@google/genai";
-
-const ai = new GoogleGenAI({ apiKey: "AIzaSyADA-4u6bvCJkf5kfqbnE0F7ofpzPcamU0" });
+import { useGetIAContent } from "./hooks/useGenerateContentAI";
 
 function App() {
   const { data, loading } = useCsvData('/data/historico.csv');
   const { data: projectionData, loading: projectionLoading } = useCsvData('/data/proyecciones.csv');
   const [startDate, setstartDate] = useState<Date | undefined>(undefined);
   const [endDate, setendDate] = useState<Date | undefined>(undefined);
-  const [aiAnalysis, setAiAnalysis] = useState<string>('');
-  const [aiLoading, setAiLoading] = useState(false);
+
+  const { aiAnalysis, aiLoading, getAnalysis } = useGetIAContent();
 
   const handleStartDateChange = useCallback((date: Date | undefined) => {
     setstartDate(date);
@@ -29,85 +27,36 @@ function App() {
 
   const projectionDateRange = useProjectionDateRange(projectionData);
 
-  useEffect(() => {
-    console.log('Date filter changed:', { startDate, endDate })
-  }, [startDate, endDate])
-
   const tableData = useMemo(() =>
     data.slice(0, 10) as HistoricalData[],
     [data]
-  );
-
-  async function getIA() {
-    if (!data.length) return;
-
-    setAiLoading(true);
-    try {
-      // Calcular estadísticas básicas
-      const totalGasto = data.reduce((sum, item) => sum + (item as HistoricalData).spend, 0);
-      const promedioGasto = totalGasto / data.length;
-      const totalRegistros = data.length;
-
-      // Obtener verticales únicas
-      const verticales = [...new Set(data.map(item => item.vertical))];
-
-      // Prompt simple y contextual
-      const prompt = `Analiza estos datos de gastos de infraestructura de Mercado Libre:
-
-      DATOS:
-      - Total de registros: ${totalRegistros}
-      - Gasto total: $${totalGasto.toLocaleString('es-CO')}
-      - Gasto promedio: $${promedioGasto.toLocaleString('es-CO')}
-      - Verticales: ${verticales.join(', ')}
-
-      Proporciona un resumen ejecutivo breve (máximo 3 párrafos) con:
-      1. Análisis de los gastos
-      2. Principales insights
-      3. Una recomendación clave`;
-
-      const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash-exp",
-        contents: prompt,
-      });
-
-      const texto = response.text || '';
-      setAiAnalysis(texto);
-
-    } catch (error) {
-      console.error('Error en análisis de IA:', error);
-      setAiAnalysis('Error al generar análisis. Por favor, intenta nuevamente.');
-    } finally {
-      setAiLoading(false);
-    }
-  }
+  )
 
   if (loading || projectionLoading) return <p>Cargando...</p>
   if (!data.length) return <p>No hay datos históricos...</p>
   if (!projectionData.length) return <p>No hay datos de proyección...</p>
 
   return (
-    <div className="h-screen h-full overflow-y-auto bg-zinc-800 text-white py-10">
+    <div className="h-screen overflow-y-auto bg-zinc-800 text-white py-10">
       <div className="w-3/4 mx-auto">
-        <h1>Datos históricos</h1>
         <AdvancedMuiTable data={tableData} title="Análisis de Datos Históricos MELI" />
 
-        <div className="mt-6 bg-gray-900 rounded-xl p-5 shadow-lg">
+        <div className="mt-6 bg-gray-600 text-black rounded-2xl p-5 shadow-lg">
           <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center">
-              <span className="text-2xl mr-3">🤖</span>
-              <h3 className="text-xl font-bold text-white">Análisis Inteligente con IA</h3>
-            </div>
+            <h3 className="text-transparent bg-clip-text text-xl bg-gradient-to-r from-white to-purple-300 p-2">
+              Análisis Inteligente con IA
+            </h3>
             <button
-              onClick={getIA}
+              onClick={() => getAnalysis(tableData)}
               disabled={aiLoading}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${aiLoading
-                  ? 'bg-gray-600 cursor-not-allowed'
-                  : aiAnalysis
-                    ? 'bg-blue-600 hover:bg-blue-700'
-                    : 'bg-green-600 hover:bg-green-700'
-                } text-white`}
+              className={`px-3 py-2 rounded-lg font-medium transition-colors ${aiLoading
+                ? 'border-gray-600 cursor-not-allowed'
+                : aiAnalysis
+                  ? 'bg-blue-600 hover:bg-blue-700'
+                  : 'border-zinc-500 border hover:bg-zinc-500 border-none'
+                } text-zinc-100`}
             >
-              {aiLoading ? '⏳ Analizando...' : aiAnalysis ? '🔄 Regenerar' : '✨ Generar Análisis'}
+              {aiLoading ? 'Analizando...' : aiAnalysis ? 'Regenerar' : 'Generar análisis'}
             </button>
           </div>
 
@@ -127,7 +76,7 @@ function App() {
           )}
 
           {!aiAnalysis && !aiLoading && (
-            <div className="text-center py-6 text-gray-400">
+            <div className="text-center py-6 text-gray-200">
               <p className="mb-2">Haz clic en "Generar Análisis" para obtener insights con IA</p>
               <p className="text-xs">Powered by Google Gemini 2.0</p>
             </div>
