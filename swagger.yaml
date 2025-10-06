@@ -1,0 +1,302 @@
+openapi: 3.0.3
+info:
+  title: MELI Projections Dashboard API
+  description: API documentation for MELI infrastructure spending analysis dashboard
+  version: 1.0.0
+  contact:
+    name: Technical Assessment Team
+  license:
+    name: MIT
+
+servers:
+  - url: http://localhost:5173
+    description: Development server
+
+paths:
+  /data/historico.csv:
+    get:
+      summary: Get historical spending data
+      description: Retrieves historical infrastructure spending data in CSV format
+      responses:
+        '200':
+          description: Historical data CSV file
+          content:
+            text/csv:
+              schema:
+                type: string
+                example: |
+                  vertical,area,initiative,service,date,spend
+                  Marketplace,Infrastructure,Cloud Migration,API Gateway,01/01/2023,15000
+        '404':
+          description: Data file not found
+
+  /data/proyecciones.csv:
+    get:
+      summary: Get projection spending data
+      description: Retrieves projected infrastructure spending data in CSV format
+      responses:
+        '200':
+          description: Projection data CSV file
+          content:
+            text/csv:
+              schema:
+                type: string
+                example: |
+                  vertical,area,initiative,service,date,proyected_spend,max_spend,min_spend
+                  Marketplace,Infrastructure,Cloud Migration,API Gateway,01/01/2024,18000,20000,16000
+        '404':
+          description: Data file not found
+
+components:
+  schemas:
+    HistoricalData:
+      type: object
+      required:
+        - vertical
+        - area
+        - initiative
+        - service
+        - date
+        - spend
+      properties:
+        vertical:
+          type: string
+          description: Business vertical
+          example: "Marketplace"
+        area:
+          type: string
+          description: Business area
+          example: "Infrastructure"
+        initiative:
+          type: string
+          description: Initiative name
+          example: "Cloud Migration"
+        service:
+          type: string
+          description: Service name
+          example: "API Gateway"
+        date:
+          type: string
+          format: date
+          pattern: '^[0-9]{2}/[0-9]{2}/[0-9]{4}$'
+          description: Date in DD/MM/YYYY format
+          example: "01/01/2023"
+        spend:
+          type: number
+          format: float
+          minimum: 0
+          description: Actual spending amount in USD
+          example: 15000
+
+    ProjectionData:
+      type: object
+      required:
+        - vertical
+        - area
+        - initiative
+        - service
+        - date
+        - proyected_spend
+        - max_spend
+        - min_spend
+      properties:
+        vertical:
+          type: string
+          description: Business vertical
+          example: "Marketplace"
+        area:
+          type: string
+          description: Business area
+          example: "Infrastructure"
+        initiative:
+          type: string
+          description: Initiative name
+          example: "Cloud Migration"
+        service:
+          type: string
+          description: Service name
+          example: "API Gateway"
+        date:
+          type: string
+          format: date
+          pattern: '^[0-9]{2}/[0-9]{2}/[0-9]{4}$'
+          description: Date in DD/MM/YYYY format
+          example: "01/01/2024"
+        proyected_spend:
+          type: number
+          format: float
+          minimum: 0
+          description: Projected spending amount in USD
+          example: 18000
+        max_spend:
+          type: number
+          format: float
+          minimum: 0
+          description: Maximum projected spending in USD
+          example: 20000
+        min_spend:
+          type: number
+          format: float
+          minimum: 0
+          description: Minimum projected spending in USD
+          example: 16000
+
+    ChartData:
+      type: object
+      properties:
+        date:
+          type: string
+          format: date-time
+          description: JavaScript Date object
+        proyected_spend:
+          type: number
+          format: float
+          description: Projected spending amount
+        max_spend:
+          type: number
+          format: float
+          description: Maximum spending amount
+        min_spend:
+          type: number
+          format: float
+          description: Minimum spending amount
+
+    AIAnalysisRequest:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/HistoricalData'
+          description: Historical data for analysis
+        prompt:
+          type: string
+          description: Analysis prompt for AI
+          example: "Analyze spending patterns and provide insights"
+
+    AIAnalysisResponse:
+      type: object
+      properties:
+        analysis:
+          type: string
+          description: AI-generated analysis text
+          example: "Based on the data analysis, spending has increased by 15% over the last quarter..."
+        insights:
+          type: array
+          items:
+            type: string
+          description: Key insights from the analysis
+        recommendations:
+          type: array
+          items:
+            type: string
+          description: Strategic recommendations
+
+    DateRange:
+      type: object
+      properties:
+        minDate:
+          type: string
+          format: date
+          nullable: true
+          description: Minimum date in dataset
+        maxDate:
+          type: string
+          format: date
+          nullable: true
+          description: Maximum date in dataset
+
+    ChartConfig:
+      type: object
+      properties:
+        chartType:
+          type: string
+          enum: [line, area, bar, composed, pie]
+          description: Type of chart to render
+        selectedLines:
+          type: object
+          properties:
+            proyected_spend:
+              type: boolean
+            max_spend:
+              type: boolean
+            min_spend:
+              type: boolean
+        showAnimations:
+          type: boolean
+          description: Enable chart animations
+        showGrid:
+          type: boolean
+          description: Show chart grid
+        dateRange:
+          $ref: '#/components/schemas/DateRange'
+
+    ExportFormat:
+      type: string
+      enum: [csv, json]
+      description: Data export format
+
+    TableConfig:
+      type: object
+      properties:
+        page:
+          type: integer
+          minimum: 0
+          description: Current page number
+        rowsPerPage:
+          type: integer
+          enum: [5, 10, 25, 50]
+          description: Number of rows per page
+        searchTerm:
+          type: string
+          description: Global search term
+        sortField:
+          type: string
+          description: Field to sort by
+        sortDirection:
+          type: string
+          enum: [asc, desc]
+          description: Sort direction
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Error message
+        code:
+          type: string
+          description: Error code
+        details:
+          type: object
+          description: Additional error details
+
+  responses:
+    BadRequest:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    
+    InternalServerError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+tags:
+  - name: Data
+    description: Data loading and processing endpoints
+  - name: AI
+    description: AI analysis functionality
+  - name: Export
+    description: Data export functionality

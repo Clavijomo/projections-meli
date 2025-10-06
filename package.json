@@ -1,37 +1,86 @@
 {
-  "name": "projections-meli",
-  "private": true,
-  "author": "Jonathan Clavijo",
-  "version": "0.0.0",
+  "name": "meli-projections-dashboard",
+  "version": "1.0.0",
+  "description": "Advanced React dashboard for analyzing Mercado Libre's infrastructure spending data with AI-powered insights",
   "type": "module",
+  "keywords": [
+    "react",
+    "typescript",
+    "dashboard",
+    "data-visualization",
+    "ai-analysis",
+    "mercadolibre",
+    "csv-processing",
+    "recharts",
+    "material-ui"
+  ],
+  "author": "Technical Assessment Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/projections-meli.git"
+  },
+  "homepage": "https://your-username.github.io/projections-meli",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "build:analyze": "vite build --mode analyze",
+    "clean": "rm -rf dist node_modules/.vite",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
-    "@mui/material": "^7.3.3",
-    "@mui/x-data-grid": "^8.13.1",
-    "date-fns": "^4.1.0",
-    "papaparse": "^5.5.3",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "recharts": "^3.2.1",
-    "simple-statistics": "^7.8.8"
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@google/genai": "^1.22.0",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "@mui/x-date-pickers": "^7.3.2",
+    "@mui/x-date-pickers-pro": "^7.3.2",
+    "@tanstack/react-table": "^8.17.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "papaparse": "^5.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "@types/papaparse": "^5.3.16",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.3",
-    "eslint": "^9.36.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.4.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.44.0",
-    "vite": "^7.1.7"
+    "@date-io/date-fns": "^3.0.0",
+    "@types/node": "^20.14.5",
+    "@types/papaparse": "^5.3.14",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.2.2",
+    "vite": "^7.1.9"
+  },
+  "engines": {
+    "node": ">=20.19.0 || >=22.12.0",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
