@@ -27,11 +27,6 @@ function App() {
 
   const projectionDateRange = useProjectionDateRange(projectionData);
 
-  const tableData = useMemo(() =>
-    data.slice(0, 10) as HistoricalData[],
-    [data]
-  )
-
   if (loading || projectionLoading) return <p>Cargando...</p>
   if (!data.length) return <p>No hay datos históricos...</p>
   if (!projectionData.length) return <p>No hay datos de proyección...</p>
@@ -39,7 +34,7 @@ function App() {
   return (
     <div className="h-screen overflow-y-auto bg-zinc-800 text-white py-10">
       <div className="w-3/4 mx-auto">
-        <AdvancedMuiTable data={tableData} title="Análisis de Datos Históricos MELI" />
+        <AdvancedMuiTable data={data as HistoricalData[]} title="Análisis de Datos Históricos MELI" />
 
         <div className="mt-6 bg-gray-600 text-black rounded-2xl p-5 shadow-lg">
           <div className="flex items-center justify-between mb-4">
@@ -47,7 +42,7 @@ function App() {
               Análisis Inteligente con IA
             </h3>
             <button
-              onClick={() => getAnalysis(tableData)}
+              onClick={() => getAnalysis(data as HistoricalData[])}
               disabled={aiLoading}
               className={`px-3 py-2 rounded-lg font-medium transition-colors ${aiLoading
                 ? 'border-gray-600 cursor-not-allowed'

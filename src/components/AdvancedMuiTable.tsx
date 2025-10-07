@@ -124,7 +124,7 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   }, []);
-
+  
   const handleSort = useCallback((field: keyof ExtendedHistoricalData) => {
     if (sortField === field) {
       setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
@@ -133,6 +133,11 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
       setSortDirection('asc');
     }
   }, [sortField, sortDirection]);
+
+  const createSortHandler = useCallback(
+    (field: keyof ExtendedHistoricalData) => () => handleSort(field),
+    [handleSort]
+  );
 
   const handleView = useCallback((row: ExtendedHistoricalData) => {
     setViewDialog({ open: true, row });
@@ -250,16 +255,16 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-              <TableCell onClick={() => handleSort('vertical')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
+              <TableCell onClick={() => createSortHandler('vertical')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
                 Vertical {sortField === 'vertical' && (sortDirection === 'asc' ? '↑' : '↓')}
               </TableCell>
-              <TableCell onClick={() => handleSort('area')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
+              <TableCell onClick={() => createSortHandler('area')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
                 Área {sortField === 'area' && (sortDirection === 'asc' ? '↑' : '↓')}
               </TableCell>
-              <TableCell onClick={() => handleSort('date')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
+              <TableCell onClick={() => createSortHandler('date')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
                 Fecha {sortField === 'date' && (sortDirection === 'asc' ? '↑' : '↓')}
               </TableCell>
-              <TableCell onClick={() => handleSort('spend')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
+              <TableCell onClick={() => createSortHandler('spend')} sx={{ cursor: 'pointer', fontWeight: 'bold' }}>
                 Gasto {sortField === 'spend' && (sortDirection === 'asc' ? '↑' : '↓')}
               </TableCell>
               <TableCell>Estado</TableCell>
@@ -341,7 +346,12 @@ export const AdvancedMuiTable = ({ data, title = "Datos Históricos Avanzados" }
         sx={{ color: 'white', '& .MuiTablePagination-selectIcon': { color: 'white' } }}
       />
 
-      <Dialog open={viewDialog.open} onClose={() => setViewDialog({ open: false, row: null })} maxWidth="md" fullWidth>
+      <Dialog 
+        open={viewDialog.open} 
+        onClose={() => setViewDialog({ open: false, row: null })} 
+        maxWidth="md" 
+        fullWidth
+      >
         <DialogTitle>Detalles del Registro</DialogTitle>
         <DialogContent>
           {viewDialog.row && (
