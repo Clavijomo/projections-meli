@@ -1,6 +1,4 @@
-import { useCallback } from 'react';
-
-type ChartType = 'line' | 'area' | 'bar' | 'composed' | 'pie';
+import type { ChartType } from "@/types/data";
 
 interface ChartControlsProps {
   chartType: ChartType;
@@ -23,8 +21,6 @@ interface ChartControlsProps {
   onLineToggle: (line: 'proyected_spend' | 'max_spend' | 'min_spend') => void;
   onAnimationToggle: () => void;
   onGridToggle: () => void;
-  onZoomReset: () => void;
-  onExportData: (format: 'csv' | 'json') => void;
 }
 
 export const ChartControls = ({
@@ -37,17 +33,11 @@ export const ChartControls = ({
   onLineToggle,
   onAnimationToggle,
   onGridToggle,
-  onZoomReset,
-  onExportData,
 }: ChartControlsProps) => {
-
-  const handleExportCSV = useCallback(() => onExportData('csv'), [onExportData]);
-  const handleExportJSON = useCallback(() => onExportData('json'), [onExportData]);
 
   return (
     <div className="bg-gray-700 rounded-t-2xl p-4">
       <div className="flex flex-wrap items-center justify-between gap-4">
-        {/* Selector de tipo de gráfica */}
         <div className="flex items-center gap-2">
           <span className="text-sm font-medium text-gray-300">Tipo:</span>
           {(['line', 'area', 'bar', 'composed', 'pie'] as ChartType[]).map((type) => (
@@ -86,7 +76,6 @@ export const ChartControls = ({
           ))}
         </div>
 
-        {/* Controles adicionales */}
         <div className="flex items-center gap-2">
           <button
             onClick={onAnimationToggle}
@@ -104,29 +93,7 @@ export const ChartControls = ({
           >
             Cuadrícula
           </button>
-          <button
-            onClick={onZoomReset}
-            className="text-xs cursor-pointer"
-          >
-            Reset zoom
-          </button>
-        </div>
-
-        {/* Exportación */}
-        <div className="flex items-center gap-2">
-          <button
-            onClick={handleExportCSV}
-            className="px-3 py-1 rounded text-xs bg-green-600 text-white hover:bg-green-700 transition-colors"
-          >
-            📊 CSV
-          </button>
-          <button
-            onClick={handleExportJSON}
-            className="px-3 py-1 rounded text-xs bg-blue-600 text-white hover:bg-blue-700 transition-colors"
-          >
-            📄 JSON
-          </button>
-        </div>
+        </div>        
       </div>
 
       {stats && (

@@ -47,11 +47,13 @@ export function DateFilter({ date, setDate, label, minDate, maxDate }: DateFilte
 
   const formatDateForInput = (date: Date | null | undefined): string => {
     if (!date) return '';
+
     return date.toISOString().split('T')[0];
   };
 
   const formatDateForDisplay = (date: Date | null | undefined): string => {
     if (!date) return 'No definida';
+
     return date.toLocaleDateString('es-ES', {
       day: '2-digit',
       month: '2-digit',
@@ -80,7 +82,7 @@ export function DateFilter({ date, setDate, label, minDate, maxDate }: DateFilte
           onChange={handleDateChange}   
           min={formatDateForInput(minDate)}
           max={formatDateForInput(maxDate)}
-          className='p-2 border border-zinc-400 rounded-md text-sm flex-1'          
+          className='p-2 bg-zinc-700 rounded-md text-sm flex-1 text-zinc-400'
         />
 
         <button
