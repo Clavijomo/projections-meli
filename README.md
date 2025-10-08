@@ -55,6 +55,7 @@ npm run build
 
 ### Estructura Refactorizada (Principio de Responsabilidad Única)
 
+```
 src/
 ├── components/
 │   ├── AdvancedMuiTable/           # Tabla modular
@@ -94,7 +95,7 @@ src/
 ├── types/                        # Definiciones TypeScript
 │   └── data.ts                   # Interfaces de datos
 └── App.tsx                       # Aplicación principal
-
+```
 
 ## 🧪 Testing
 
