@@ -1,9 +1,9 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 import { useCsvData } from "./hooks/useCsvData";
 import { useProjectionDateRange } from "./hooks/useDateRange";
 
 import type { HistoricalData } from "@/types/data";
-import { AdvancedChartView } from "./components/AdvancedChartView";
+import { AdvancedChartView } from "./components/AdvancedChartView/AdvancedChartView";
 import { AdvancedMuiTable } from "./components/AdvancedMuiTable";
 import { DateFilter } from "./components/DateFilter";
 import { ErrorBoundary } from "./components/ErrorBoundary";

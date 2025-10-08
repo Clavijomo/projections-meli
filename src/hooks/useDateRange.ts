@@ -15,7 +15,6 @@ export function useDateRange(data: CsvData[]): DateRange {
       return { minDate: null, maxDate: null };
     }
 
-    // OPTIMIZACIÓN: Limitar procesamiento para datasets grandes
     const maxSampleSize = 200;
     const sampleData = data.length > maxSampleSize 
       ? data.filter((_, index) => index % Math.ceil(data.length / maxSampleSize) === 0)
@@ -24,10 +23,8 @@ export function useDateRange(data: CsvData[]): DateRange {
     let minDate: Date | null = null;
     let maxDate: Date | null = null;
     
-    // Cache para fechas parseadas
     const dateCache = new Map<string, Date | null>();
 
-    // Optimización: encontrar min/max en una sola pasada con cache
     sampleData.forEach((row) => {
       if (!row.date) return;
       
@@ -52,28 +49,19 @@ export function useDateRange(data: CsvData[]): DateRange {
         }
       }
     });
-
-    console.log('useDateRange result:', { 
-      minDate, 
-      maxDate, 
-      sampleSize: sampleData.length,
-      cacheSize: dateCache.size 
-    });
+    
     return { minDate, maxDate };
-  }, [data.length, data.slice(0, 5).map(row => row.date).join(',')]);  // Optimizar dependencias
+  }, [data.length, data.slice(0, 5).map(row => row.date).join(',')]);  
 }
 
-// Hook específico para datos históricos
 export function useHistoricalDateRange(data: CsvData[]): DateRange {
   const historicalData = useMemo(() => {
-    // OPTIMIZACIÓN: Filtrar solo si hay datos mixtos
     if (!data.length) return [];
     
     const firstRow = data[0];
     const isAllHistorical = 'spend' in firstRow && !('proyected_spend' in firstRow);
     
     if (isAllHistorical) {
-      // Si todos son históricos, no filtrar
       return data;
     }
     
@@ -85,17 +73,14 @@ export function useHistoricalDateRange(data: CsvData[]): DateRange {
   return useDateRange(historicalData);
 }
 
-// Hook específico para datos de proyecciones
 export function useProjectionDateRange(data: CsvData[]): DateRange {
   const projectionData = useMemo(() => {
-    // OPTIMIZACIÓN: Filtrar solo si hay datos mixtos
     if (!data.length) return [];
     
     const firstRow = data[0];
     const isAllProjection = 'proyected_spend' in firstRow;
     
-    if (isAllProjection) {
-      // Si todos son proyecciones, no filtrar
+    if (isAllProjection) { 
       return data;
     }
     

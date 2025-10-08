@@ -96,7 +96,7 @@ export const ChartRenderer = ({
     dataKey: "date",
     type: "number" as const,
     scale: "time" as const,
-    domain: zoomDomain.left && zoomDomain.right ? [zoomDomain.left, zoomDomain.right] : ['dataMin', 'dataMax'] as const,
+    domain: zoomDomain.left && zoomDomain.right ? [zoomDomain.left, zoomDomain.right] : ['dataMin' as const, 'dataMax' as const],
     tickFormatter: (timestamp: number) => {
       if (isNaN(timestamp)) return '';
       return format(new Date(timestamp), 'MMM yyyy', { locale: es });
