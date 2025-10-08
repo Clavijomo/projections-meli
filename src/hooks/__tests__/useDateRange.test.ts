@@ -14,13 +14,12 @@ describe('useProjectionDateRange', () => {
   it('should calculate correct date range from projection data', () => {
     const { result } = renderHook(() => useProjectionDateRange(mockProjectionData));
     
-    // Los datos mock usan formato DD/MM/YYYY: '01/01/2025' y '02/01/2025'
     expect(result.current.minDate?.getFullYear()).toBe(2025);
-    expect(result.current.minDate?.getMonth()).toBe(0); // Enero = 0
+    expect(result.current.minDate?.getMonth()).toBe(0);
     expect(result.current.minDate?.getDate()).toBe(1);
     
     expect(result.current.maxDate?.getFullYear()).toBe(2025);
-    expect(result.current.maxDate?.getMonth()).toBe(0); // Enero = 0
+    expect(result.current.maxDate?.getMonth()).toBe(0);
     expect(result.current.maxDate?.getDate()).toBe(2);
   });
 
@@ -39,11 +38,11 @@ describe('useProjectionDateRange', () => {
     const { result } = renderHook(() => useProjectionDateRange(singleDataPoint));
     
     expect(result.current.minDate?.getFullYear()).toBe(2025);
-    expect(result.current.minDate?.getMonth()).toBe(5); // Junio = 5
+    expect(result.current.minDate?.getMonth()).toBe(5);
     expect(result.current.minDate?.getDate()).toBe(15);
     
     expect(result.current.maxDate?.getFullYear()).toBe(2025);
-    expect(result.current.maxDate?.getMonth()).toBe(5); // Junio = 5
+    expect(result.current.maxDate?.getMonth()).toBe(5);
     expect(result.current.maxDate?.getDate()).toBe(15);
   });
 
@@ -84,11 +83,11 @@ describe('useProjectionDateRange', () => {
     const { result } = renderHook(() => useProjectionDateRange(multiDateData));
     
     expect(result.current.minDate?.getFullYear()).toBe(2025);
-    expect(result.current.minDate?.getMonth()).toBe(0); // Enero = 0
+    expect(result.current.minDate?.getMonth()).toBe(0);
     expect(result.current.minDate?.getDate()).toBe(1);
     
     expect(result.current.maxDate?.getFullYear()).toBe(2025);
-    expect(result.current.maxDate?.getMonth()).toBe(2); // Marzo = 2
+    expect(result.current.maxDate?.getMonth()).toBe(2);
     expect(result.current.maxDate?.getDate()).toBe(15);
   });
 
@@ -124,21 +123,21 @@ describe('useProjectionDateRange', () => {
     );
 
     expect(result.current.minDate?.getFullYear()).toBe(2025);
-    expect(result.current.minDate?.getMonth()).toBe(0); // Enero = 0
+    expect(result.current.minDate?.getMonth()).toBe(0);
     expect(result.current.minDate?.getDate()).toBe(1);
     
     expect(result.current.maxDate?.getFullYear()).toBe(2025);
-    expect(result.current.maxDate?.getMonth()).toBe(0); // Enero = 0
+    expect(result.current.maxDate?.getMonth()).toBe(0);
     expect(result.current.maxDate?.getDate()).toBe(1);
 
     rerender({ data: updatedData });
 
     expect(result.current.minDate?.getFullYear()).toBe(2025);
-    expect(result.current.minDate?.getMonth()).toBe(0); // Enero = 0
+    expect(result.current.minDate?.getMonth()).toBe(0);
     expect(result.current.minDate?.getDate()).toBe(1);
     
     expect(result.current.maxDate?.getFullYear()).toBe(2025);
-    expect(result.current.maxDate?.getMonth()).toBe(11); // Diciembre = 11
+    expect(result.current.maxDate?.getMonth()).toBe(11);
     expect(result.current.maxDate?.getDate()).toBe(31);
   });
 
@@ -156,7 +155,6 @@ describe('useProjectionDateRange', () => {
 
     const { result } = renderHook(() => useProjectionDateRange(invalidDateData));
     
-    // Debería manejar fechas inválidas sin romper
     expect(result.current.minDate).toBeDefined();
     expect(result.current.maxDate).toBeDefined();
   });

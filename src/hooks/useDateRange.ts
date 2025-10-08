@@ -9,8 +9,6 @@ interface DateRange {
 
 export function useDateRange(data: CsvData[]): DateRange {
   return useMemo(() => {
-    console.log('useDateRange recalculating with data length:', data?.length);
-    
     if (!data || data.length === 0) {
       return { minDate: null, maxDate: null };
     }

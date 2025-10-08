@@ -2,7 +2,6 @@ import { fetchGetIA } from '../generateContentGemini';
 import { mockHistoricalData, mockAIResponse } from '../../__mocks__/mockData';
 import type { HistoricalData } from '@/types/data';
 
-// Import the mock
 const { mockGenerateContent } = require('../../__mocks__/@google/genai.js');
 
 describe('generateContentGemini', () => {
@@ -40,10 +39,9 @@ describe('generateContentGemini', () => {
     const callArgs = mockGenerateContent.mock.calls[0][0];
     const prompt = callArgs.contents;
 
-    // Verificar que el prompt contiene las estadísticas correctas
     expect(prompt).toContain('Total de registros: 3');
-    expect(prompt).toContain('Gasto total: $3.690,72'); // Formato con separadores de miles
-    expect(prompt).toContain('Gasto promedio: $1.230,24'); // Promedio calculado
+    expect(prompt).toContain('Gasto total: $3.690,72');
+    expect(prompt).toContain('Gasto promedio: $1.230,24');
     expect(prompt).toContain('Verticales: Retail, Fintech');
   });
 
@@ -96,7 +94,7 @@ describe('generateContentGemini', () => {
     const dataWithDuplicateVerticals: HistoricalData[] = [
       ...mockHistoricalData,
       {
-        vertical: 'Retail', // Duplicado
+        vertical: 'Retail',
         area: 'Another Area',
         initiative: 'Another Initiative',
         service: 'Another Service',
@@ -114,7 +112,6 @@ describe('generateContentGemini', () => {
     const callArgs = mockGenerateContent.mock.calls[0][0];
     const prompt = callArgs.contents;
 
-    // Debe mostrar solo verticales únicos
     expect(prompt).toContain('Verticales: Retail, Fintech');
     expect(prompt).not.toContain('Retail, Retail');
   });
@@ -138,7 +135,6 @@ describe('generateContentGemini', () => {
     const callArgs = mockGenerateContent.mock.calls[0][0];
     const prompt = callArgs.contents;
 
-    // Verificar formato con separadores de miles
     expect(prompt).toContain('1.234.567');
   });
 

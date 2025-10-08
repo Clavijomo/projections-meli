@@ -68,10 +68,9 @@ export const ChartRenderer = ({
   onMouseUp,
 }: ChartRendererProps) => {
 
-  // Clean data to ensure no NaN values reach the charts
   const cleanedData = aggregatedData.map(item => ({
     ...item,
-    date: item.date.getTime(), // Convert to timestamp for charts
+    date: item.date.getTime(),
     proyected_spend: Number(item.proyected_spend) || 0,
     max_spend: Number(item.max_spend) || 0,
     min_spend: Number(item.min_spend) || 0,
@@ -271,7 +270,7 @@ export const ChartRenderer = ({
         </ResponsiveContainer>
       );
 
-    default: // line
+    default:
       return (
         <ResponsiveContainer width="100%" height="100%">
           <LineChart {...commonProps}>

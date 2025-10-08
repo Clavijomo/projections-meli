@@ -3,7 +3,6 @@ import { useGetIAContent } from '../useGenerateContentAI';
 import { mockHistoricalData, mockAIResponse } from '../../__mocks__/mockData';
 import * as generateContentGemini from '../../services/generateContentGemini';
 
-// Mock del servicio de Gemini
 jest.mock('../../services/generateContentGemini');
 const mockFetchGetIA = generateContentGemini.fetchGetIA as jest.MockedFunction<typeof generateContentGemini.fetchGetIA>;
 
@@ -98,7 +97,6 @@ describe('useGetIAContent', () => {
 
     const { result } = renderHook(() => useGetIAContent());
 
-    // Primera llamada
     await act(async () => {
       await result.current.getAnalysis(mockHistoricalData);
     });
@@ -107,7 +105,6 @@ describe('useGetIAContent', () => {
       expect(result.current.aiAnalysis).toBe('First response');
     });
 
-    // Segunda llamada
     await act(async () => {
       await result.current.getAnalysis(mockHistoricalData);
     });
