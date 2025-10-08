@@ -35,9 +35,6 @@ Dashboard interactivo desarrollado en React para el análisis de datos de gastos
 - *Build Tool*: Vite
 - *Testing*: Jest + Testing Library
 
-## 🚀 Inicio Rápido
-
-bash
 # Instalar dependencias
 npm install
 
@@ -52,8 +49,6 @@ npm run build
 
 
 ## 🏗️ Arquitectura del Proyecto
-
-### Estructura Refactorizada (Principio de Responsabilidad Única)
 
 ```
 src/
