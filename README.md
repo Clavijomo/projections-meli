@@ -2,6 +2,9 @@
 
 React-based dashboard for analyzing Mercado Libre's infrastructure spending data with AI-powered insights.
 
+## Web site
+taupe-wisp-27a64c.netlify.app
+
 ## Features
 
 - CSV data processing and visualization
