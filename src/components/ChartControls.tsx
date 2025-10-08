@@ -21,6 +21,7 @@ interface ChartControlsProps {
   onLineToggle: (line: 'proyected_spend' | 'max_spend' | 'min_spend') => void;
   onAnimationToggle: () => void;
   onGridToggle: () => void;
+  onZoomReset?: () => void;
 }
 
 export const ChartControls = ({
@@ -33,6 +34,7 @@ export const ChartControls = ({
   onLineToggle,
   onAnimationToggle,
   onGridToggle,
+  onZoomReset,
 }: ChartControlsProps) => {
 
   return (
@@ -69,6 +71,10 @@ export const ChartControls = ({
                   ? 'bg-green-600 text-white'
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
+              role="checkbox"
+              aria-checked={value}
+              aria-label={key === 'proyected_spend' ? 'Proyectado' :
+                         key === 'max_spend' ? 'Máximo' : 'Mínimo'}
             >
               {key === 'proyected_spend' ? 'Proyectado' :
                key === 'max_spend' ? 'Máximo' : 'Mínimo'}
@@ -82,6 +88,9 @@ export const ChartControls = ({
             className={`px-2 py-1 rounded-full text-xs transition-colors cursor-pointer ${
               showAnimations ? 'bg-purple-200 text-purple-800' : 'text-purple-300'
             }`}
+            role="checkbox"
+            aria-checked={showAnimations}
+            aria-label="Animaciones"
           >
             Animación
           </button>
@@ -90,9 +99,20 @@ export const ChartControls = ({
             className={`px-2 py-1 rounded-full text-xs transition-colors cursor-pointer ${
               showGrid ? 'bg-indigo-200 text-indigo-800' : 'bg-gray-700 text-indigo-300'
             }`}
+            role="checkbox"
+            aria-checked={showGrid}
+            aria-label="Cuadrícula"
           >
             Cuadrícula
           </button>
+          {onZoomReset && (
+            <button
+              onClick={onZoomReset}
+              className="px-2 py-1 rounded text-xs bg-red-600 text-white hover:bg-red-700 transition-colors"
+            >
+              Resetear Zoom
+            </button>
+          )}
         </div>        
       </div>
 

@@ -1,8 +1,7 @@
 import { renderHook, waitFor } from '@testing-library/react';
+import { mockHistoricalData } from '../../__mocks__/mockData';
 import { useCsvData } from '../useCsvData';
-import { mockCsvResponse, mockHistoricalData } from '../../__mocks__/mockData';
 
-// Mock Papa Parse
 jest.mock('papaparse', () => ({
   parse: jest.fn(),
 }));
@@ -25,7 +24,6 @@ describe('useCsvData', () => {
 
   it('should load and parse CSV data successfully', async () => {
     mockPapa.parse.mockImplementation((filepath: string, options: any) => {
-      // Simular la respuesta exitosa de Papa Parse
       setTimeout(() => {
         options.complete({
           data: mockHistoricalData,

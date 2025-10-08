@@ -207,7 +207,6 @@ describe('ChartControls', () => {
   it('should have proper accessibility attributes', () => {
     render(<ChartControls {...defaultProps} />);
 
-    // Verificar que los switches tienen labels apropiados
     expect(screen.getByRole('checkbox', { name: /proyectado/i })).toBeInTheDocument();
     expect(screen.getByRole('checkbox', { name: /máximo/i })).toBeInTheDocument();
     expect(screen.getByRole('checkbox', { name: /mínimo/i })).toBeInTheDocument();

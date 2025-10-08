@@ -2,7 +2,6 @@ import type { CsvData } from '@/types/data';
 import { ChartControls } from '../ChartControls';
 import { ChartRenderer } from '../ChartRenderer';
 
-// Hooks
 import { useDebouncedDates } from './hooks/useDebouncedDates';
 import { useChartData } from './hooks/useChartData';
 import { useChartStats } from './hooks/useChartStats';
@@ -16,7 +15,6 @@ type AdvancedChartViewProps = {
 }
 
 export const AdvancedChartView = ({ startDate, endDate, projectionData }: AdvancedChartViewProps) => {
-  // Custom hooks for data and state management
   const debouncedDates = useDebouncedDates(startDate, endDate);
   const { aggregatedData } = useChartData(projectionData, debouncedDates.startDate, debouncedDates.endDate);
   const { stats } = useChartStats(aggregatedData);
