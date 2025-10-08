@@ -2,6 +2,8 @@
 
 Dashboard interactivo desarrollado en React para el análisis de datos de gastos de infraestructura de Mercado Libre con insights potenciados por IA.
 
+## Sitio web público: https://taupe-wisp-27a64c.netlify.app/
+
 ## ✨ Características Principales
 
 ### 📈 Visualización de Datos
@@ -93,10 +95,8 @@ src/
 ```
 
 ## 🧪 Testing
-
 El proyecto incluye una suite completa de tests:
 
-bash
 # Ejecutar todos los tests
 npm test
 
