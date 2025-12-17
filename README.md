@@ -1,157 +1,158 @@
-## 📰 Caracol – Proof Front-End Associate
+# 📊 MELI Projections Dashboard
 
-This project is a frontend technical test, whose objective is to build a modular, scalable, and maintainable interface from JSON data, using Handlebars, LESS, and JavaScript with a clear architecture.
+Dashboard interactivo desarrollado en React para el análisis de datos de gastos de infraestructura de Mercado Libre con insights potenciados por IA.
 
-The main focus of development is on:
+## Sitio web público: https://taupe-wisp-27a64c.netlify.app/
 
-* Componentization
-* Separation of responsibilities
-* Frontend best practices
-* Clear and understandable code for future maintenance
+## ✨ Características Principales
 
----
-### Test objective
+### 📈 Visualización de Datos
+- *Múltiples tipos de gráficos*: Línea, Área, Barras, Mixto, Circular
+- *Gráficos interactivos* con zoom, animaciones y cuadrícula configurable
+- *Estadísticas en tiempo real*: Total, promedio, máximo, mínimo y puntos de datos
 
-Build a web page that:
+### 🔍 Tabla Avanzada
+- *Filtrado inteligente* por estado, búsqueda de texto y filtros avanzados
+- *Ordenamiento dinámico* por cualquier columna
+- *Paginación configurable* (5, 10, 25, 50 registros por página)
+- *Vista detallada* de registros individuales
 
-* Dynamically renders its content from a JSON file
-* Uses Handlebars as a template engine
-* Implements styles with LESS
-* Manages interaction with JavaScript, applying Object-Oriented Programming (OOP)
-* Maintains a clean, scalable, and professional structure
+### 🤖 Análisis con IA
+- *Integración con Google Gemini* para análisis automático
+- *Insights inteligentes* sobre patrones de gasto
+- *Recomendaciones* basadas en los datos
 
-### Technologies used
+### 🎨 Interfaz Moderna
+- *Diseño responsive* con Material-UI y Tailwind CSS
+- *Tema oscuro* optimizado para análisis de datos
+- *Componentes reutilizables* y modulares
 
-* Semantic HTML5
-* Handlebars.js – View rendering
-* LESS – Style preprocessor
-* JavaScript (ES6+) – Logic and interactions
-* Object-Oriented Programming (OOP)
-* Gulp – Task automation
-* Node.js / NPM – Dependency management
+## 🛠️ Stack Tecnológico
 
----
-### 📁 Project structure
+- *Frontend*: React 18 + TypeScript
+- *UI Framework*: Material-UI + Tailwind CSS
+- *Gráficos*: Recharts
+- *Procesamiento CSV*: Papa Parse
+- *IA*: Google Gemini API
+- *Build Tool*: Vite
+- *Testing*: Jest + Testing Library
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
+
+# Ejecutar tests
+npm test
+
+# Construir para producción
+npm run build
+
+
+## 🏗️ Arquitectura del Proyecto
 
 ```
-└── src
-    ├── components
-    │   ├── headline.hbs
-    │   ├── audioPlayer.hbs
-    │   ├── breadcrumbs.hbs
-    │   ├── headline.hbs
-    │   ├── hotTopics.hbs
-    │   ├── lead.hbs
-    │   ├── logo.hbs
-    │   ├── navigation.hbs
-    │   ├── pageLead.hbs
-    │   ├── social.hbs
-    │   └── subheadline.hbs
-    ├── data
-    │   └── data.json
-    ├── js
-    │   ├── app.js
-    │   ├── audioPlayer.js
-    │   └── navigation.js
-    ├── less
-    │   ├── base
-    │   │   ├── reset.less
-    │   │   ├── typography.less
-    │   │   └── variables.less
-    │   ├── components
-    │   │   ├── actions.less
-    │   │   ├── audioPlayer.less
-    │   │   ├── breadcrumbs.less
-    │   │   ├── headline.less
-    │   │   ├── hotTopics.less
-    │   │   ├── lead.less
-    │   │   ├── logo.less
-    │   │   ├── navigation.less
-    │   │   ├── pageLead.less
-    │   │   ├── social.less
-    │   │   └── subheadline.less
-    │   ├── layouts
-    │   │   ├── content.less
-    │   │   └── header.less
-    │   └── styles.less
-    └── templates
-        ├── card.hbs
-        └── main.hbs
+src/
+├── components/
+│   ├── AdvancedMuiTable/           # Tabla modular
+│   │   ├── hooks/                  # Hooks especializados
+│   │   │   ├── useTableData.ts     # Transformación de datos
+│   │   │   ├── useTableFilters.ts  # Lógica de filtros
+│   │   │   ├── useTableSorting.ts  # Lógica de ordenamiento
+│   │   │   ├── useTablePagination.ts # Lógica de paginación
+│   │   │   └── useTableDialog.ts   # Manejo de diálogos
+│   │   ├── components/             # Componentes UI
+│   │   │   ├── StatusChip.tsx      # Chip de estado
+│   │   │   ├── PriorityChip.tsx    # Chip de prioridad
+│   │   │   ├── TableFilters.tsx    # Controles de filtrado
+│   │   │   ├── TableHeader.tsx     # Encabezado con ordenamiento
+│   │   │   ├── TableRowComponent.tsx # Fila individual
+│   │   │   └── ViewDialog.tsx      # Diálogo de detalles
+│   │   └── AdvancedMuiTable.tsx    # Componente principal
+│   ├── AdvancedChartView/          # Gráficos modulares
+│   │   ├── hooks/                  # Hooks especializados
+│   │   │   ├── useChartData.ts     # Procesamiento de datos
+│   │   │   ├── useChartStats.ts    # Cálculo de estadísticas
+│   │   │   ├── useChartControls.ts # Estados de controles
+│   │   │   ├── useChartInteractions.ts # Interacciones
+│   │   │   └── useDebouncedDates.ts # Debounce de fechas
+│   │   └── AdvancedChartView.tsx   # Componente principal
+│   ├── ChartControls.tsx           # Controles de gráficos
+│   ├── ChartRenderer.tsx           # Renderizador de gráficos
+│   ├── ChartView.tsx              # Vista simple de gráficos
+│   ├── DateFilter.tsx             # Filtro de fechas
+│   └── ErrorBoundary.tsx          # Manejo de errores
+├── hooks/                         # Hooks globales
+│   ├── useCsvData.ts             # Procesamiento CSV
+│   ├── useDateRange.ts           # Manejo de rangos de fecha
+│   └── useGenerateContentAI.ts   # Integración con IA
+├── services/                     # Servicios externos
+│   └── generateContentGemini.ts  # Cliente Gemini AI
+├── types/                        # Definiciones TypeScript
+│   └── data.ts                   # Interfaces de datos
+└── App.tsx                       # Aplicación principal
 ```
----
-## 📌 Key folders
 
-* components/: Reusable components (actions, social, navigation, audioPlayer, etc.)
-* templates/: Main templates (`main.hbs`)
-* data/: Single source of data (`data.json`)
-* js/: Project logic organized by responsibility
+## 🧪 Testing
+El proyecto incluye una suite completa de tests:
 
----
-### 🧠 JavaScript Architecture
+# Ejecutar todos los tests
+npm test
 
-The project uses Object-Oriented Programming (OOP) to organize logic and maintain clear responsibilities.
+# Tests con cobertura
+npm run test:coverage
 
-🧩 app.js – Orchestrator
-
-### Responsibilities:
-
-* Initialize the application
-* Register Handlebars helpers
-* Load the data JSON
-* Render the main template
-
-> Acts as the entry point of the project.
+# Tests en modo watch
+npm run test:watch
 
 
-### 🧩 Handlebars Helpers
+*Estado actual*: ✅ 46 tests, 5 suites, 100% éxito
 
-Global helpers are defined to improve view logic:
 
-* `eq`: strict comparison
-* `includes`: string validation
+### *historico.csv*
+csv
+vertical,area,initiative,service,date,spend
+Retail,Marketing,Campaign,Analytics,01/01/2024,1500.50
 
-These helpers allow for:
 
-* Conditional rendering
-* Cleaner components
-* Less logic in HTML
+### *proyecciones.csv*
+csv
+vertical,area,initiative,service,date,proyected_spend,max_spend,min_spend
+Retail,IT,Infrastructure,Cloud,01/02/2024,2000.00,2500.00,1500.00
 
-🎨 Styles (LESS)
 
-* Use of global variables
-* Independently styled components
-* Mobile-first approach
-* Organized and easy-to-maintain code
+## 🔧 Principios de Desarrollo Aplicados
 
-----
-## ▶️ How to run the project
+### ✅ *Responsabilidad Única*
+- Cada componente y hook tiene una sola responsabilidad
+- Separación clara entre lógica de negocio y presentación
+- Módulos especializados y reutilizables
 
-### 1. Install dependencies
+### ✅ *Código Limpio*
+- Nombres descriptivos y consistentes
+- Funciones pequeñas y enfocadas
+- Comentarios donde es necesario
 
-```npm install```
+### ✅ *Performance*
+- Memoización con useMemo y useCallback
+- Debouncing para filtros y búsquedas
+- Lazy loading de componentes pesados
 
-### 2. Run the development environment
+### ✅ *Mantenibilidad*
+- Estructura modular fácil de extender
+- Tests unitarios para cada funcionalidad
+- TypeScript para detección temprana de errores
 
-```npm run dev```
+## 📚 Documentación API
 
-### 3. Open the project
+Ver la documentación Swagger:
+bash
+npm run dev
+# Luego abrir: http://localhost:5173/swagger.html
 
-Open `index.html` or the server generated by Gulp.
+## 👨‍💻 Desarrollado por
 
-#### 🧪 Technical considerations
+*Jonathan Clavijo*  
 
-* The project is designed to be scalable
-* Code readability was prioritized
-* Each component has a single responsibility
-* JSON acts as the single source of truth
-
-#### 🚀 Possible future improvements
-
-* Global state management
-* Unit tests
-* Dynamic module loading
-* Asset optimization for production
-
-## 👨‍💻 Author
-
-Ronald Daniel Ladino Prado - Frontend Developer
+Dashboard desarrollado como prueba técnica para Mercado Libre
